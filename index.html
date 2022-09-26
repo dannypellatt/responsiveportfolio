@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Danny Pellatt's Portfolio</title>
+</head>
+<body>
+
+    <!-- START nav SECTION -->
+
+    <header>
+        <nav>
+          <p>Danny Pellatt - Portfolio Website</p>
+          <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#footer">Links</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <!-- END nav SECTION -->
+
+    <main>
+
+    <!-- START title SECTION -->
+
+        <section class="intro">
+            <div class="split">
+                <div>
+                    <h1 class="section-title">Danny Pellatt</h1>
+                    <h2 class="section-subtitle">Full Stack Software Developer</h2>
+                </div>
+                <div>
+                    <img src="/images/title/titleImage9.png" alt="illustration of code" />
+                </div>
+            </div>    
+        </section>
+
+        <section class="badges">
+            <ul>
+                <li>
+                    <img src="images/badges/badge.NETCoreB&W.png" alt=".Net Core">
+                    <img src="images/badges/badgeCSharpB&W.png" alt="C Sharp">
+                    <img src="images/badges/badgeMySQLB&W.png" alt="MySQL">
+                    <img src="images/badges/badgeHTMLB&W.png" alt="HTML">
+                    <img src="images/badges/badgeCSSB&W.png" alt="CSS">
+                    <img src="images/badges/badgeJSB&W.png" alt="JavaScript">
+                    <img src="images/badges/badgePythonB&W.png" alt="Python">
+                </li>
+            </ul>
+        </section>
+
+    <!-- END title SECTION -->
+
+    <!-- START portfolio SECTION -->
+
+        <!-- portfolio choices -->
+        <section class="portfolio-choices">
+            <h2>Please choose a portfolio project to view: </h2>
+            <div class="split radio_tabs">
+                <div class="radio_mark">
+                    <h3>Cross The Pond</h3>
+                    <p>Web Application</p>
+                    <p>.NET Core MVC</p>
+                </div>
+                <div class="radio_mark">
+                    <h3>Best Buy Sim</h3>
+                    <p>CRUD Database</p>
+                    <p>.NET Core MVC</p>
+                </div>
+                <div class="radio_mark">
+                    <h3>Multiple Small Projects</h3>
+                    <p>Web Application</p>
+                    <p>.NET Core MVC</p>
+                </div>
+                <div class="radio_mark">
+                    <h3>Cross The Pond</h3>
+                    <p>Web Application</p>
+                    <p>.NET Core MVC</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio pieces -->
+        <section class="portfolio-pieces">
+
+            <div id="project1">
+                <div class="split overview">
+                    <div>
+                        <img src="images/apps/CtP-Home.png" alt="Github view of app" />
+                    </div>
+                    <div>
+                        <h2>Cross The Pond - Project - Multifunctional Web App</h2>
+                        <h3>Project Brief</h3>
+                        <p>A multifunctional travel application aiding visits 
+                            to Britain for Americans, and America for the British.</p>
+                        <h3>Features</h3>
+                        <p>The purpose of this app is to act as a guide to the small differences between 
+                            the UK and the US. It includes a translation dictionary, live weather searchable 
+                            by city, a temperature converter, and a tipping calculator. It was the final project
+                            piece for my bootcamp.</p>
+                        <h3>Technology Used</h3>
+                        <p>ASP .Net Core MVC | C# | SQL | RestAPIs | HTML | CSS | JavaScript</p>
+                        <h3>Design</h3>
+                        <p>I chose a fun and cartoony theme, and a color scheme that fitted with the red, white and blue 
+                            flags. I used free-to-use icons, manipulated with photoshop for graphics. I sought help from
+                            a graphic designer friend for sections
+                        </p>
+                        <h3>Metrics & Accolades</h3>
+                        <p>This project was is featured by my bootcamp in their portfolio page, highlighting 10 of the best 
+                            pieces made by all past students.</p>
+                        <h3>Links</h3>
+                        <a href="#">Github</a>
+                        <a href="#">Video Presentation</a>
+                    </div>
+                </div>
+
+                <div class="split details">
+                     <div class="">  <!-- CLASS NEEDED -->
+                        <img src="images/apps/CtP-Weather.png" alt="Weather page of app"/>
+
+                        <h3>Weather API</h3>
+                        <p>__________________</p>
+
+                        <img class="icon" src="images/badges/badgeapi.png" alt="API Icon"/>
+                        <h4>OpenWeather</h4>
+                        <p>Called two different APIs to display current temperature and weather in a chosen US, or UK city.</p>
+
+                        <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".NetCore Icon"/>
+                        <h4>.Net Core MVC</h4>
+                        <p>Different views created to display US or UK options. Controller called one of two APIs, dependant on user destination, with the model showing only relevant information.</p>
+                        
+                        <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
+                        <h4>C#</h4>
+                        <p>Used classes in models depending on direction alongside if statements within controller to check if input is valid, then call correct API.</p>
+
+                        <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
+                        <h4>HTML & CSS</h4>
+                        <p>HTML and CSS displays results in an easily navigable and visually appealing way.</p>
+                    </div>
+
+                    <div class="">  <!-- CLASS NEEDED -->
+                        <img src="images/apps/CtP-Words.png" alt="Translator page of app"/>
+
+                        <h3>Language Translator</h3>
+                        <p>__________________</p>
+
+                        <img class="icon" src="images/badges/badgeMySQLB&W.png" alt="SQL Icon"/>
+                        <h4>MySQL</h4>
+                        <p>Built & manipulated database using MySQL on the back end.</p>
+
+                        <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".Net Icon"/>
+                        <h4>.Net Core MVC</h4>
+                        <p>Different views created with an MVC controller to display data alphabetically. Inheritance used for optimization.</p>
+
+                        <img class="icon" src="images/badges/.png" alt=" Icon"/>
+                        <h4></h4>
+                        <p></p>
+                        
+                        <img class="icon" src="images/badges/.png" alt=" Icon"/>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                    
+                    <div class="">  <!-- CLASS NEEDED -->
+                        <img src="images/apps/CtP-.png" alt=" of app"/>
+
+                        <h3></h3>
+                        <p>__________________</p>
+
+                        <img class="icon" src="images/badges/.png" alt=""/>
+                        <h4></h4>
+                        <p></p>
+
+                        <img class="icon" src="images/badges/.png" alt=".Icon"/>
+                        <h4></h4>
+                        <p></p>
+
+                        <img class="icon" src="images/badges/.png" alt=" Icon"/>
+                        <h4></h4>
+                        <p></p>
+                        
+                        <img class="icon" src="images/badges/.png" alt=" Icon"/>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                    
+                    <div class="">  <!-- CLASS NEEDED -->
+                        <img src="images/apps/CtP-.png" alt=" of app"/>
+
+                        <h3></h3>
+                        <p>__________________</p>
+
+                        <img class="icon" src="images/badges/.png" alt=""/>
+                        <h4></h4>
+                        <p></p>
+
+                        <img class="icon" src="images/badges/.png" alt=".Icon"/>
+                        <h4></h4>
+                        <p></p>
+
+                        <img class="icon" src="images/badges/.png" alt=" Icon"/>
+                        <h4></h4>
+                        <p></p>
+                        
+                        <img class="icon" src="images/badges/.png" alt=" Icon"/>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    <!-- END portfolio SECTION -->
+
+    </main>
+
+</body>
+</html>

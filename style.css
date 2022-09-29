@@ -1,0 +1,104 @@
+/* START global SECTION */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+h2, h3, p {
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: clamp(3rem, 1rem + 7rem);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.img-center img {
+    display: block;
+    margin: auto;
+}
+
+header, section {
+    padding: 1rem 0;
+}
+
+@media (min-width: 40em) {
+    header, section {
+        padding: 1rem 0;
+    }
+}
+
+
+
+@media (min-width: 40em) {
+    .split {
+        display: flex;
+        gap: 2em;
+    }
+}
+
+@media (min-width: 40em) {
+    .even-columns {
+        display: flex;
+        align-items: flex-start;
+        gap: 1em;
+        justify-content: center;
+    }
+}
+
+.even-columns > * {
+    flex-basis: 100%;
+}
+
+/* END global SECTION */
+
+/* START intro SECTION */
+
+.title {
+    color: white;
+    background-color: black;
+}
+
+.title-badge img {
+    max-width: 10%;
+}
+
+.badges {
+    align-items: center;
+}
+
+/* End intro SECTION */
+
+/* START portfolio SECTION */
+
+.icon {
+    max-width: 50%;
+}
+
+
+/* END portfolio SECTION */

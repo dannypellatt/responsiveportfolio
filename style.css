@@ -96,9 +96,31 @@ header, section {
 
 /* START portfolio SECTION */
 
+
+
 .icon {
     max-width: 50%;
 }
-
+  
+  .radio_mark {
+    color: black;
+    max-width: 250px;
+    padding: 10px;
+    padding-top: 25px;
+  }
+  
+  .radio_tabs input[type="radio"] {
+   opacity:0.011;
+   display: none;
+  }
+  
+  .radio_tabs label {
+    border:3px solid #CCC; 
+    cursor:pointer;
+  }
+  
+  .radio_tabs label:hover {
+    background:#DDD;
+  }
 
 /* END portfolio SECTION */

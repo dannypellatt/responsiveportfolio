@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-
     <title>Danny Pellatt's Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
@@ -30,6 +30,8 @@
     <!-- END nav SECTION -->
 
     <main>
+
+        
 
     <!-- START title SECTION -->
 
@@ -68,721 +70,717 @@
 
         <!-- category choices -->
 
-        <section class="category-choices text-center">
-            <h2>Project Categories:</h2>
-            <div class="even-columns radio_tabs">
-                <div class="radio_mark">
-                    <h3>Cross The Pond</h3>
-                    <p>Web Application</p>
-                    <p>.NET Core MVC</p>
-                </div>
-                <div class="radio_mark">
-                    <h3>Best Buy Sim</h3>
-                    <p>CRUD Database</p>
-                    <p>.NET Core MVC</p>
-                </div>
-                <div class="radio_mark">
-                    <h3>Small Projects</h3>
-                    <p>Web Application</p>
-                    <p>.NET Core MVC</p>
-                </div>
-                <div class="radio_mark">
-                    <h3>Freelance Websites</h3>
-                    <p>Web Application</p>
-                    <p>.NET Core MVC</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- large projects -->
-
-        <section class="large-projects">
-
-            <!-- large projects nav bar-->
-            <section class="project-choices text-center">
-                <h2>Large Projects:</h2>
-                <div class="even-columns radio_tabs">
-                    <div class="radio_mark">
-                        <h3>Cross The Pond</h3>
-                        <p>Web Application</p>
-                        <p>.NET Core MVC</p>
-                    </div>
-                    <div class="radio_mark">
-                        <h3>Best Buy Sim</h3>
-                        <p>CRUD Database Web App</p>
-                        <p>.NET Core MVC</p>
-                    </div>
-                    <div class="radio_mark">
-                        <h3>TacoBell Geolocator</h3>
-                        <p>Console Application</p>
-                        <p>ASP .NET Core</p>
-                    </div>
-                </div>
-            </section>
-    
-            <!-- large projects portfolio pieces -->
-            <section class="portfolio-pieces">
-    
-                <div id="project1">
-                    <div class="split overview">
-                        <div class="overview-image">
-                            <img src="images/apps/CtP-Home.png" alt="Github view of app" />
-                        </div>
-                        <div>
-                            <h2>Cross The Pond - Project - Multifunctional Web App</h2>
-                            <h3>Project Brief</h3>
-                            <p>A multifunctional travel application aiding visits 
-                                to Britain for Americans, and America for the British.</p>
-                            <h3>Features</h3>
-                            <p>The purpose of this app is to act as a guide to the small differences between 
-                                the UK and the US. It includes a translation dictionary, live weather searchable 
-                                by city, a temperature converter, and a tipping calculator. It was the final project
-                                piece for my bootcamp.</p>
-                            <h3>Technology Used</h3>
-                            <p>ASP .Net Core MVC | C# | MySQL | RestAPIs | HTML | CSS | Bootstrap | JQuery | JSON | Dapper | RestSharp | Postman</p>
-                            <h3>Design</h3>
-                            <p>I chose a fun and cartoony theme, and a color scheme that fit with the red, white and blue 
-                                flags. I used free-to-use icons, manipulated with photoshop for graphics. I worked with a graphic 
-                                designer, who advised tweaks to improve readability, layout and styling.
-                            </p>
-                            <h3>Metrics & Accolades</h3>
-                            <p>This project was is featured by my bootcamp in their portfolio page, highlighting 10 of the best 
-                                final projects made by past students.</p>
-                            <h3>Links</h3>
-                            <a href="https://github.com/dannypellatt/CrossThePondUKToUSWords">View Code</a>
-                            <a href="#">Video Presentation</a>
-                            <a href="#">Deep Dive</a>
-                        </div>
-                    </div>
-    
-                    <div class="even-columns details img-center">
-                        <div class="col ">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/CtP-Weather.png" alt="Weather page of app"/>
-    
-                            <h3>Weather API</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/badgeapi.png" alt="API Icon"/>
-                            <h4>OpenWeather</h4>
-                            <p>Called two different APIs to display current temperature and weather in a chosen US, or UK city.</p>
-    
-                            <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".NetCore Icon"/>
-                            <h4>.Net Core MVC</h4>
-                            <p>Different views created to display US or UK options. Controller called one of two APIs, dependant on user destination, with the model showing only relevant information.</p>
-                            
-                            <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
-                            <h4>C#</h4>
-                            <p>Used classes in models depending on direction alongside if statements within controller to check if input is valid, then call correct API.</p>
-    
-                            <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
-                            <h4>HTML & CSS</h4>
-                            <p>HTML and CSS displays results in an easily navigable and visually appealing way.</p>
-                        </div>
-    
-                        <div class="col">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/CtP-Words.png" alt="Translator page of app"/>
-    
-                            <h3>Language Translator</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/badgeMySQLB&W.png" alt="SQL Icon"/>
-                            <h4>MySQL</h4>
-                            <p>Built & manipulated database using MySQL on the back end.</p>
-    
-                            <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".Net Icon"/>
-                            <h4>.Net Core MVC</h4>
-                            <p>Different views created with an MVC controller to display data alphabetically. Inheritance used for optimization.</p>
-    
-                            <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
-                            <h4>C#</h4>
-                            <p>Used C# functions within repository to create different displayable lists from IEnumerables, as well as within the model to fetch columns.</p>
-                            
-                            <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
-                            <h4>HTML & CSS</h4>
-                            <p>Used HTML & CSS to display page navigation and relevant table</p>
-                        </div>
-                        
-                        <div class="col">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/CtP-Temp.png" alt="Temperature page of app"/>
-    
-                            <h3>Temperature Converter</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/badgecalculator.png" alt="calculator app"/>
-                            <h4>Calculator</h4>
-                            <p>A calculator with two buttons, one to convert input into C and the other to F.</p>
-    
-                            <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".Net Icon"/>
-                            <h4>.Net Core MVC</h4>
-                            <p>Housed two methods within the controller, displaying as input and buttons within the view.</p>
-    
-                            <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
-                            <h4>C#</h4>
-                            <p>Used if statements containing different equations for the buttons. used LINQ to round result.</p>
-                            
-                            <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
-                            <h4>HTML & CSS</h4>
-                            <p>Displayed an easily navigable calculator with separate how to and fact sections.</p>
-                        </div>
-                        
-                        <div class="col">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/CtP-.png" alt=" of app"/>
-    
-                            <h3>Tipping Calculator</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/badgecalculator.png" alt="calculator app"/>
-                            <h4>Calculator</h4>
-                            <p>Allows user to input check amount, then pick what tip to give. Calculates both tip amount and total.</p>
-    
-                            <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".Net Icon"/>
-                            <h4>.Net Core MVC</h4>
-                            <p>Two different views created to display UK and US information and calculators. 
-                                Used the model and the controller to return the results dependant on which button was pressed.
-                            </p>
-    
-                            <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
-                            <h4>C#</h4>
-                            <p>If statements were used for each tip amount, changing two different ViewData. LINQ was used to round and convert the results to a string.</p>
-                            
-                            <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
-                            <h4>HTML & CSS</h4>
-                            <p>Either two or three buttons were displayed, depending on the page. A wordy page was broken up into readable sections.</p>
-                        </div>
+        <section id="projects">
+            <div id="myRadioGroup">
+                <div class="category-choices text-center wrapper">
+                    <h2>Project Categories:</h2>
+                    <div class="even-columns radio_tabs">
+                        <label class="radio_mark">
+                            <h3>Large Projects</h3>
+                            <input type="radio" name="projects" checked="checked" value="1" />
+                        </label>
+                        <label class="radio_mark">
+                            <h3>Small Projects</h3>
+                            <input type="radio" name="projects" value="2" />
+                        </label>
+                        <label class="radio_mark">
+                            <h3>Freelance Websites</h3>
+                            <input type="radio" name="projects" value="3" />
+                        </label>
                     </div>
                 </div>
 
-                <div id="project2">
-                    <div class="split overview">
-                        <div>
-                            <img src="images/apps/BestBuy-Home.png" alt="Landing page of app" />
+                <!-- large projects -->
+                
+                <div id="Project1" class="desc">
+
+                    <!-- large projects nav bar-->
+                    <section class="project-choices text-center">
+                        <h2>Large Projects:</h2>
+                        <div class="even-columns">
+                            <div>
+                                <h3>Cross The Pond</h3>
+                                <p>Web Application</p>
+                                <p>.NET Core MVC</p>
+                            </div>
+                            <div>
+                                <h3>Best Buy Sim</h3>
+                                <p>CRUD Database Web App</p>
+                                <p>.NET Core MVC</p>
+                            </div>
+                            <div>
+                                <h3>TacoBell Geolocator</h3>
+                                <p>Console Application</p>
+                                <p>ASP .NET Core</p>
+                            </div>
                         </div>
-                        <div>
-                            <h2>Best Buy Sim - Class Project - ASP .NET Core MVC CRUD Application</h2>
-                            <h3>Project Brief</h3>
-                            <p>Create a web page in .Net Core MVC that can display, update, delete from, and input data into a SQL database of BestBuy Products</p>
-                            <h3>Features</h3>
-                            <p>It allows users to view the ID, name, price, category, stock level, of BestBuy products and whether they are on sale. You can also create and view individual products, as well as deleting and updating their information in the database.</p>
-                            <h3>Technology Used</h3>
-                            <p>ASP .Net Core MVC || C# || SQL || HTML || CSS || JSON || Dapper || RestSharp</p>
-                            <h3>Design</h3>
-                            <p>The design for this application was purposely kept very basic, not deviating from the standard view as per instructions.</p>
-                            <h3>Metrics & Accolades</h3>
-                            <p>Top marks awarded by class instructor</p>
-                            <h3>Links</h3>
-                            <a href="https://github.com/dannypellatt/BestBuyProject">View Code</a>
-                            <a href="#">Video Presentation</a>
-                            <a href="#">Deep Dive</a>
+                    </section>
+            
+                    <!-- large projects portfolio pieces -->
+                    <section class="portfolio-pieces">
+            
+                        <div id="Project1">
+                            <div class="split overview">
+                                <div class="overview-image">
+                                    <img src="images/apps/CtP-Home.png" alt="Github view of app" />
+                                </div>
+                                <div>
+                                    <h2>Cross The Pond - Project - Multifunctional Web App</h2>
+                                    <h3>Project Brief</h3>
+                                    <p>A multifunctional travel application aiding visits 
+                                        to Britain for Americans, and America for the British.</p>
+                                    <h3>Features</h3>
+                                    <p>The purpose of this app is to act as a guide to the small differences between 
+                                        the UK and the US. It includes a translation dictionary, live weather searchable 
+                                        by city, a temperature converter, and a tipping calculator. It was the final project
+                                        piece for my bootcamp.</p>
+                                    <h3>Technology Used</h3>
+                                    <p>ASP .Net Core MVC | C# | MySQL | RestAPIs | HTML | CSS | Bootstrap | JQuery | JSON | Dapper | RestSharp | Postman</p>
+                                    <h3>Design</h3>
+                                    <p>I chose a fun and cartoony theme, and a color scheme that fit with the red, white and blue 
+                                        flags. I used free-to-use icons, manipulated with photoshop for graphics. I worked with a graphic 
+                                        designer, who advised tweaks to improve readability, layout and styling.
+                                    </p>
+                                    <h3>Metrics & Accolades</h3>
+                                    <p>This project was is featured by my bootcamp in their portfolio page, highlighting 10 of the best 
+                                        final projects made by past students.</p>
+                                    <h3>Links</h3>
+                                    <a href="https://github.com/dannypellatt/CrossThePondUKToUSWords">View Code</a>
+                                    <a href="#">Video Presentation</a>
+                                    <a href="#">Deep Dive</a>
+                                </div>
+                            </div>
+            
+                            <div class="even-columns details img-center">
+                                <div class="col ">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/CtP-Weather.png" alt="Weather page of app"/>
+            
+                                    <h3>Weather API</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/badgeapi.png" alt="API Icon"/>
+                                    <h4>OpenWeather</h4>
+                                    <p>Called two different APIs to display current temperature and weather in a chosen US, or UK city.</p>
+            
+                                    <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".NetCore Icon"/>
+                                    <h4>.Net Core MVC</h4>
+                                    <p>Different views created to display US or UK options. Controller called one of two APIs, dependant on user destination, with the model showing only relevant information.</p>
+                                    
+                                    <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
+                                    <h4>C#</h4>
+                                    <p>Used classes in models depending on direction alongside if statements within controller to check if input is valid, then call correct API.</p>
+            
+                                    <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
+                                    <h4>HTML & CSS</h4>
+                                    <p>HTML and CSS displays results in an easily navigable and visually appealing way.</p>
+                                </div>
+            
+                                <div class="col">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/CtP-Words.png" alt="Translator page of app"/>
+            
+                                    <h3>Language Translator</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/badgeMySQLB&W.png" alt="SQL Icon"/>
+                                    <h4>MySQL</h4>
+                                    <p>Built & manipulated database using MySQL on the back end.</p>
+            
+                                    <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".Net Icon"/>
+                                    <h4>.Net Core MVC</h4>
+                                    <p>Different views created with an MVC controller to display data alphabetically. Inheritance used for optimization.</p>
+            
+                                    <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
+                                    <h4>C#</h4>
+                                    <p>Used C# functions within repository to create different displayable lists from IEnumerables, as well as within the model to fetch columns.</p>
+                                    
+                                    <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
+                                    <h4>HTML & CSS</h4>
+                                    <p>Used HTML & CSS to display page navigation and relevant table</p>
+                                </div>
+                                
+                                <div class="col">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/CtP-Temp.png" alt="Temperature page of app"/>
+            
+                                    <h3>Temperature Converter</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/badgecalculator.png" alt="calculator app"/>
+                                    <h4>Calculator</h4>
+                                    <p>A calculator with two buttons, one to convert input into C and the other to F.</p>
+            
+                                    <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".Net Icon"/>
+                                    <h4>.Net Core MVC</h4>
+                                    <p>Housed two methods within the controller, displaying as input and buttons within the view.</p>
+            
+                                    <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
+                                    <h4>C#</h4>
+                                    <p>Used if statements containing different equations for the buttons. used LINQ to round result.</p>
+                                    
+                                    <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
+                                    <h4>HTML & CSS</h4>
+                                    <p>Displayed an easily navigable calculator with separate how to and fact sections.</p>
+                                </div>
+                                
+                                <div class="col">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/CtP-Tipping.png" alt=" of app"/>
+            
+                                    <h3>Tipping Calculator</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/badgecalculator.png" alt="calculator app"/>
+                                    <h4>Calculator</h4>
+                                    <p>Allows user to input check amount, then pick what tip to give. Calculates both tip amount and total.</p>
+            
+                                    <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".Net Icon"/>
+                                    <h4>.Net Core MVC</h4>
+                                    <p>Two different views created to display UK and US information and calculators. 
+                                        Used the model and the controller to return the results dependant on which button was pressed.
+                                    </p>
+            
+                                    <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
+                                    <h4>C#</h4>
+                                    <p>If statements were used for each tip amount, changing two different ViewData. LINQ was used to round and convert the results to a string.</p>
+                                    
+                                    <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
+                                    <h4>HTML & CSS</h4>
+                                    <p>Either two or three buttons were displayed, depending on the page. A wordy page was broken up into readable sections.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-    
-                    <div class="even-columns details">
-                        <div class="col">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/BestBuy-Github.png" alt=" of app"/>
-    
-                            <h3>ASP .NET Core MVC</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=""/>
-                            <h4>.NET CORE MVC</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur um tenetur distinctio enim labore quasi quibusdam dolores vitae molestias delectus ratione.</p>
-    
-                            <img class="icon" src="images/badges/badgeCSharpB&W.png" alt=".Icon"/>
-                            <h4>C#</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur um tenetur distinctio enim labore quasi quibusdam dolores vitae molestias delectus ratione.</p>
-    
-                            <img class="icon" src="images/badges/b.png" alt=" Icon"/>
-                            <h4>HTML & CSS</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur um tenetur distinctio enim labore quasi quibusdam dolores vitae molestias delectus ratione.</p>
+
+                        <div id="project2">
+                            <div class="split overview">
+                                <div>
+                                    <img src="images/apps/BestBuy-Home.png" alt="Landing page of app" />
+                                </div>
+                                <div>
+                                    <h2>Best Buy Sim - Class Project - ASP .NET Core MVC CRUD Application</h2>
+                                    <h3>Project Brief</h3>
+                                    <p>Create a web page in .Net Core MVC that can display, update, delete from, and input data into a SQL database of BestBuy Products</p>
+                                    <h3>Features</h3>
+                                    <p>It allows users to view the ID, name, price, category, stock level, of BestBuy products and whether they are on sale. You can also create and view individual products, as well as deleting and updating their information in the database.</p>
+                                    <h3>Technology Used</h3>
+                                    <p>ASP .Net Core MVC || C# || SQL || HTML || CSS || JSON || Dapper || RestSharp</p>
+                                    <h3>Design</h3>
+                                    <p>The design for this application was purposely kept very basic, not deviating from the standard view as per instructions.</p>
+                                    <h3>Metrics & Accolades</h3>
+                                    <p>Top marks awarded by class instructor</p>
+                                    <h3>Links</h3>
+                                    <a href="https://github.com/dannypellatt/BestBuyProject">View Code</a>
+                                    <a href="#">Video Presentation</a>
+                                    <a href="#">Deep Dive</a>
+                                </div>
+                            </div>
+            
+                            <div class="even-columns details">
+                                <div class="col">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/BestBuy-Github.png" alt=" of app"/>
+            
+                                    <h3>ASP .NET Core MVC</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=""/>
+                                    <h4>.NET CORE MVC</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur um tenetur distinctio enim labore quasi quibusdam dolores vitae molestias delectus ratione.</p>
+            
+                                    <img class="icon" src="images/badges/badgeCSharpB&W.png" alt=".Icon"/>
+                                    <h4>C#</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur um tenetur distinctio enim labore quasi quibusdam dolores vitae molestias delectus ratione.</p>
+            
+                                    <img class="icon" src="images/badges/b.png" alt=" Icon"/>
+                                    <h4>HTML & CSS</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur um tenetur distinctio enim labore quasi quibusdam dolores vitae molestias delectus ratione.</p>
+                                </div>
+            
+                                <div class="col">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/CtP-.png" alt=" of app"/>
+            
+                                    <h3>SQL</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/badgeMySQLB&W.png" alt=""/>
+                                    <h4>MySQL</h4>
+                                    <p>Used the MySQL workbench in order to manipulate the data.</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=".Icon"/>
+                                    <h4>Plugins</h4>
+                                    <p>Used the popular Dapper and MySQL data NuGet packages within the .NET framework to translate the data.</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=" Icon"/>
+                                    <h4>Advanced Queries</h4>
+                                    <p>Used JOIN and UNION to combine data from different tables.</p>
+                                    
+                                    <img class="icon" src="images/badges/.png" alt=" Icon"/>
+                                    <h4></h4>
+                                    <p></p>
+                                </div>
+                                
+                            </div>
                         </div>
-    
-                        <div class="col">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/CtP-.png" alt=" of app"/>
-    
-                            <h3>SQL</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/badgeMySQLB&W.png" alt=""/>
-                            <h4>MySQL</h4>
-                            <p>Used the MySQL workbench in order to manipulate the data.</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=".Icon"/>
-                            <h4>Plugins</h4>
-                            <p>Used the popular Dapper and MySQL data NuGet packages within the .NET framework to translate the data.</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=" Icon"/>
-                            <h4>Advanced Queries</h4>
-                            <p>Used JOIN and UNION to combine data from different tables.</p>
-                            
-                            <img class="icon" src="images/badges/.png" alt=" Icon"/>
-                            <h4></h4>
-                            <p></p>
+
+                        <div id="project3">
+                            <div class="split overview">
+                                <div>
+                                    <img src="images/apps/CtP-Home.png" alt="Github view of app" />
+                                </div>
+                                <div>
+                                    <h2>TacoBell Geolocator - Project - Team Console Application</h2>
+                                    <h3>Project Brief</h3>
+                                    <p>Work with a team of developers to find the two furthest TacoBell locations.</p>
+                                    <h3>Features</h3>
+                                    <p>Finds and collects the coordinates of all TacoBell locations within the continental US, 
+                                        then calculates the distances between them. The two furthest restaurants and their distance 
+                                        from one another is displayed on the console.</p>
+                                    <h3>Technology Used</h3>
+                                    <p>ASP .NET Core || C# || MySQL || APIs || Test Driven Development || NuGet</p>
+                                    <h3>Design</h3>
+                                    <p>As this application displays the results on the console, no design was necessary.</p>
+                                    <h3>Metrics & Accolades</h3>
+                                    <p>Good feedback on our ability to work as a team, specifically splitting apart tasks, planning and presentation.</p>
+                                    <h3>Links</h3>
+                                    <a href="#">View Code</a>
+                                    <a href="#">Video Presentation</a>
+                                    <a href="#">Deep Dive</a>
+                                </div>
+                            </div>
+            
+                            <div class="split details">
+                                <div class="">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/BestBuy-Github.png" alt=" of app"/>
+            
+                                    <h3>Coding</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=""/>
+                                    <h4>ASP .Net Core</h4>
+                                    <p></p>
+            
+                                    <img class="icon" src="images/badges/badgeCSharpB&W.png" alt=".Icon"/>
+                                    <h4>C#</h4>
+                                    <p></p>
+            
+                                    <img class="icon" src="images/badges/badgeMySQLB&W.png" alt=" Icon"/>
+                                    <h4>SQL</h4>
+                                    <p></p>
+                                    
+                                </div>
+            
+                                <div class="">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/CtP-.png" alt=" of app"/>
+            
+                                    <h3>Teamwork</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=""/>
+                                    <h4>Github</h4>
+                                    <p>Created branches to work on individual pieces of code, pushing after presenting.</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=".Icon"/>
+                                    <h4>Collaboration</h4>
+                                    <p>Worked with team remotely through Zoom and Discord to envision, explore, and finalize the project.</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=" Icon"/>
+                                    <h4>Adaptation</h4>
+                                    <p>Continually adapted the workflow according to the team's need. 
+                                        Some projects proved lengthier than when first planned, so adjustments to workflow were needed.</p>
+                                    
+                                </div>
+                                
+                                <div class="">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/CtP-.png" alt=" of app"/>
+            
+                                    <h3>Test Driven Development</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=""/>
+                                    <h4>xUnit</h4>
+                                    <p>Built cases first using the popular testing tool within the .NET Framework to confirm our results.</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=".Icon"/>
+                                    <h4>TDD Cycle</h4>
+                                    <p>We added the test, then ran for the expected failures. We wrote the simplest code, 
+                                        then removed duplicates and rearranged, testing after each refactor to confirm continued functionality.</p>
+            
+                                </div>
+                                
+                            </div>
                         </div>
-                        
-                    </div>
+
+                    </section>
+
                 </div>
 
-                <div id="project3">
-                    <div class="split overview">
-                        <div>
-                            <img src="images/apps/CtP-Home.png" alt="Github view of app" />
+                <!-- small projects -->
+
+                <div id="Project2" class="desc" style="display: none;">
+
+                    <!-- small projects nav bar-->
+                    <section class="project-choices text-center">
+                        <h2>Small Projects:</h2>
+                        <div class="split radio_tabs even-columns">
+                            <div class="radio_mark">
+                                <h3>Swanson Goes West</h3>
+                                <p>Console Application</p>
+                                <p>ASP .NET Core</p>
+                            </div>
+                            <div class="radio_mark">
+                                <h3>gimmepizza</h3>
+                                <p>Web Application</p>
+                                <p>.NET Core MVC</p>
+                            </div>
                         </div>
-                        <div>
-                            <h2>TacoBell Geolocator - Project - Team Console Application</h2>
-                            <h3>Project Brief</h3>
-                            <p>Work with a team of developers to find the two furthest TacoBell locations.</p>
-                            <h3>Features</h3>
-                            <p>Finds and collects the coordinates of all TacoBell locations within the continental US, 
-                                then calculates the distances between them. The two furthest restaurants and their distance 
-                                from one another is displayed on the console.</p>
-                            <h3>Technology Used</h3>
-                            <p>ASP .NET Core || C# || MySQL || APIs || Test Driven Development || NuGet</p>
-                            <h3>Design</h3>
-                            <p>As this application displays the results on the console, no design was necessary.</p>
-                            <h3>Metrics & Accolades</h3>
-                            <p>Good feedback on our ability to work as a team, specifically splitting apart tasks, planning and presentation.</p>
-                            <h3>Links</h3>
-                            <a href="#">View Code</a>
-                            <a href="#">Video Presentation</a>
-                            <a href="#">Deep Dive</a>
+                    </section>
+            
+                    <!-- large projects portfolio pieces -->
+                    <section class="portfolio-pieces">
+            
+                        <div id="project1">
+                            <div class="split overview">
+                                <div>
+                                    <img src="images/apps/CtP-Home.png" alt="Github view of app" />
+                                </div>
+                                <div>
+                                    <h2>Swanson Goes West - Project - RestAPI Console App</h2>
+                                    <h3>Project Brief</h3>
+                                    <p>Create an application that simulates a conversation between Kanye West and Ron Swanson.</p>
+                                    <h3>Features</h3>
+                                    <p>This application call two different API's, one that returns random Kanye West quotes 
+                                        as a JSON object, and another that returns Ron Swanson quotes as a JSON array. 
+                                        The NewtonSoft.JSON package parsed these into strings. LINQ was used to trim and replace letters and 
+                                        a delay was inserted, and I concetenated in the correct punctuation, making the display look 
+                                        like a real online conversation.
+                                    </p>
+                                    <h3>Technology Used</h3>
+                                    <p>ASP .Net Core || C# || RestAPIs || RapidAPI || Github || JSON || NewtonSoft || LINQ</p>
+                                    <h3>Design</h3>
+                                    <p>As this was a console application, the design revolved around delaying and manipulating the lines with C#.
+                                    </p>
+                                    <h3>Links</h3>
+                                    <a href="https://github.com/dannypellatt/CrossThePondUKToUSWords">View Code</a>
+                                    <a href="#">Video Presentation</a>
+                                    <a href="#">Deep Dive</a>
+                                </div>
+                            </div>
+            
                         </div>
-                    </div>
-    
-                    <div class="split details">
-                        <div class="">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/BestBuy-Github.png" alt=" of app"/>
-    
-                            <h3>Coding</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=""/>
-                            <h4>ASP .Net Core</h4>
-                            <p></p>
-    
-                            <img class="icon" src="images/badges/badgeCSharpB&W.png" alt=".Icon"/>
-                            <h4>C#</h4>
-                            <p></p>
-    
-                            <img class="icon" src="images/badges/badgeMySQLB&W.png" alt=" Icon"/>
-                            <h4>SQL</h4>
-                            <p></p>
-                            
+
+                        <div id="project2">
+                            <div class="split overview">
+                                <div>
+                                    <img src="images/apps/BestBuy-Home.png" alt="Landing page of app" />
+                                </div>
+                                <div>
+                                    <h2>gimmepizza - Personal Project - .NET Core MVC Web App</h2>
+                                    <h3>Project Brief</h3>
+                                    <p>One 18 inch pizza is more than two 12 inch pizzas. Create a web page that allows users to 
+                                        input pizza sizes and quantity, then calculate the amount in square inches.</p>
+                                    <h3>Features</h3>
+                                    <p>A simple web page that has two separate input boxes and a calculate button. The answer is 
+                                        rounded using LINQ and displayed to the user. HTML and CSS are used in the view to create an 
+                                        appealing landing page</p>
+                                    <h3>Technology Used</h3>
+                                    <p>ASP .Net Core MVC || C# || LINQ || HTML || CSS </p>
+                                    <h3>Design</h3>
+                                    <p>The design for this application was purposely kept very basic, not deviating from the standard view as per instructions.</p>
+                                    <h3>Metrics & Accolades</h3>
+                                    <p>Top marks awarded by class instructor</p>
+                                    <h3>Links</h3>
+                                    <a href="https://github.com/dannypellatt/BestBuyProject">View Code</a>
+                                    <a href="#">Video Presentation</a>
+                                    <a href="#">Deep Dive</a>
+                                </div>
+                            </div>
+            
+                            <div class="split details">
+                                <div class="">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/BestBuy-Github.png" alt=" of app"/>
+            
+                                    <h3>ASP .NET Core MVC</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=""/>
+                                    <h4>.NET CORE MVC</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur um tenetur distinctio enim labore quasi quibusdam dolores vitae molestias delectus ratione.</p>
+            
+                                    <img class="icon" src="images/badges/badgeCSharpB&W.png" alt=".Icon"/>
+                                    <h4>C#</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur um tenetur distinctio enim labore quasi quibusdam dolores vitae molestias delectus ratione.</p>
+            
+                                    <img class="icon" src="images/badges/b.png" alt=" Icon"/>
+                                    <h4>HTML & CSS</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur um tenetur distinctio enim labore quasi quibusdam dolores vitae molestias delectus ratione.</p>
+                                </div>
+            
+                                <div class="">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/CtP-.png" alt=" of app"/>
+            
+                                    <h3>SQL</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/badgeMySQLB&W.png" alt=""/>
+                                    <h4>MySQL</h4>
+                                    <p>Used the MySQL workbench in order to manipulate the data.</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=".Icon"/>
+                                    <h4>Plugins</h4>
+                                    <p>Used the popular Dapper and MySQL data NuGet packages within the .NET framework to translate the data.</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=" Icon"/>
+                                    <h4>Advanced Queries</h4>
+                                    <p>Used JOIN and UNION to combine data from different tables.</p>
+                                    
+                                    <img class="icon" src="images/badges/.png" alt=" Icon"/>
+                                    <h4></h4>
+                                    <p></p>
+                                </div>
+                                
+                            </div>
                         </div>
-    
-                        <div class="">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/CtP-.png" alt=" of app"/>
-    
-                            <h3>Teamwork</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=""/>
-                            <h4>Github</h4>
-                            <p>Created branches to work on individual pieces of code, pushing after presenting.</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=".Icon"/>
-                            <h4>Collaboration</h4>
-                            <p>Worked with team remotely through Zoom and Discord to envision, explore, and finalize the project.</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=" Icon"/>
-                            <h4>Adaptation</h4>
-                            <p>Continually adapted the workflow according to the team's need. 
-                                Some projects proved lengthier than when first planned, so adjustments to workflow were needed.</p>
-                            
+
+                        <div id="project3">
+                            <div class="split overview">
+                                <div>
+                                    <img src="images/apps/CtP-Home.png" alt="Github view of app" />
+                                </div>
+                                <div>
+                                    <h2>TacoBell Geolocator - Project - Team Console Application</h2>
+                                    <h3>Project Brief</h3>
+                                    <p>Work with a team of developers to find the two furthest TacoBell locations.</p>
+                                    <h3>Features</h3>
+                                    <p>Finds and collects the coordinates of all TacoBell locations within the continental US, 
+                                        then calculates the distances between them. The two furthest restaurants and their distance 
+                                        from one another is displayed on the console.</p>
+                                    <h3>Technology Used</h3>
+                                    <p>ASP .NET Core || C# || MySQL || APIs || Test Driven Development || NuGet</p>
+                                    <h3>Design</h3>
+                                    <p>As this application displays the results on the console, no design was necessary.</p>
+                                    <h3>Metrics & Accolades</h3>
+                                    <p>Good feedback on our ability to work as a team, specifically splitting apart tasks, planning and presentation.</p>
+                                    <h3>Links</h3>
+                                    <a href="#">View Code</a>
+                                    <a href="#">Video Presentation</a>
+                                    <a href="#">Deep Dive</a>
+                                </div>
+                            </div>
+            
+                            <div class="split details">
+                                <div class="">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/BestBuy-Github.png" alt=" of app"/>
+            
+                                    <h3>Coding</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=""/>
+                                    <h4>ASP .Net Core</h4>
+                                    <p></p>
+            
+                                    <img class="icon" src="images/badges/badgeCSharpB&W.png" alt=".Icon"/>
+                                    <h4>C#</h4>
+                                    <p></p>
+            
+                                    <img class="icon" src="images/badges/badgeMySQLB&W.png" alt=" Icon"/>
+                                    <h4>SQL</h4>
+                                    <p></p>
+                                    
+                                </div>
+            
+                                <div class="">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/CtP-.png" alt=" of app"/>
+            
+                                    <h3>Teamwork</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=""/>
+                                    <h4>Github</h4>
+                                    <p>Created branches to work on individual pieces of code, pushing after presenting.</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=".Icon"/>
+                                    <h4>Collaboration</h4>
+                                    <p>Worked with team remotely through Zoom and Discord to envision, explore, and finalize the project.</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=" Icon"/>
+                                    <h4>Adaptation</h4>
+                                    <p>Continually adapted the workflow according to the team's need. 
+                                        Some projects proved lengthier than when first planned, so adjustments to workflow were needed.</p>
+                                    
+                                </div>
+                                
+                                <div class="">  <!-- CLASS NEEDED -->
+                                    <img src="images/apps/CtP-.png" alt=" of app"/>
+            
+                                    <h3>Test Driven Development</h3>
+                                    <p>__________________</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=""/>
+                                    <h4>xUnit</h4>
+                                    <p>Built cases first using the popular testing tool within the .NET Framework to confirm our results.</p>
+            
+                                    <img class="icon" src="images/badges/.png" alt=".Icon"/>
+                                    <h4>TDD Cycle</h4>
+                                    <p>We added the test, then ran for the expected failures. We wrote the simplest code, 
+                                        then removed duplicates and rearranged, testing after each refactor to confirm continued functionality.</p>
+            
+                                </div>
+                                
+                            </div>
                         </div>
-                        
-                        <div class="">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/CtP-.png" alt=" of app"/>
-    
-                            <h3>Test Driven Development</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=""/>
-                            <h4>xUnit</h4>
-                            <p>Built cases first using the popular testing tool within the .NET Framework to confirm our results.</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=".Icon"/>
-                            <h4>TDD Cycle</h4>
-                            <p>We added the test, then ran for the expected failures. We wrote the simplest code, 
-                                then removed duplicates and rearranged, testing after each refactor to confirm continued functionality.</p>
-    
-                        </div>
-                        
-                    </div>
+
+                    </section>
+
                 </div>
+                
+                <!-- freelance websites -->
 
-            </section>
+                <div id="Project3" class="desc" style="display: none;">
 
-        </section>
+                    <!-- freelance websites nav bar-->
+                    <section class="project-choices text-center">
+                        <h2>Freelance Websites:</h2>
+                        <div class="even-columns radio_tabs">
+                            <div class="radio_mark">
+                                <h3>NGP Handyman</h3>
+                            </div>
+                            <div class="radio_mark">
+                                <h3>Crofton Music</h3>
+                            </div>
+                            <div class="radio_mark">
+                                <h3>Traveller's Restival</h3>
+                            </div>
+                        </div>
+                    </section>
+            
+                    <!-- freelance websites portfolio pieces -->
+                    <section class="portfolio-pieces">
+            
+                        <div id="project1">
+                            <div class="split overview">
+                                <div>
+                                    <img src="images/apps/CtP-Home.png" alt="Github view of app" />
+                                </div>
+                                <div>
+                                    <h2>NGP Handyman - Website - Small Handyman Business</h2>
+                                    <h3>Project Brief</h3>
+                                    <p>A website showcasing the business of a handyman in the South of England. </p>
+                                    <h3>Requirements</h3>
+                                    <p>A simple and easily navigable website, as client has mostly older customers. 
+                                        Needed an about section, services offered and a contact form.
+                                    </p>
+                                    <h3>Technology Used</h3>
+                                    <p>HTML || CSS || Bootstrap</p>
+                                    <h3>Design</h3>
+                                    <p>
+                                        I used a free template in order to create this website, as the client wanted to see some 
+                                        examples and then pick his favorite. For ease of use, it is only one page, with a sticky nav-bar,
+                                        simple, intuitive sections, and left-aligned text.
+                                    </p>
+                                    <h3>Links</h3>
+                                    <a href="https://github.com/dannypellatt/CrossThePondUKToUSWords">View Code</a>
+                                    <a href="#">Video Presentation</a>
+                                    <a href="#">Deep Dive</a>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- small projects -->
+                        <div id="project2">
+                            <div class="split overview">
+                                <div>
+                                    <img src="images/apps/BestBuy-Home.png" alt="Landing page of app" />
+                                </div>
+                                <div>
+                                    <h2>Crofton Music - Musician Page</h2>
+                                    <h3>Project Brief</h3>
+                                    <p>A website showcasing the business of a handyman in the South of England. </p>
+                                    <h3>Requirements</h3>
+                                    <p>A simple and easily navigable website, as client has mostly older customers. 
+                                        Needed an about section, services offered and a contact form.
+                                    </p>
+                                    <h3>Technology Used</h3>
+                                    <p>HTML || CSS || Bootstrap</p>
+                                    <h3>Design</h3>
+                                    <p>
+                                        I used a free template in order to create this website, as the client wanted to see some 
+                                        examples and then pick his favorite. For ease of use, it is only one page, with a sticky nav-bar,
+                                        simple, intuitive sections, and left-aligned text.
+                                    </p>
+                                    <h3>Links</h3>
+                                    <a href="https://github.com/dannypellatt/CrossThePondUKToUSWords">View Code</a>
+                                    <a href="#">Video Presentation</a>
+                                    <a href="#">Deep Dive</a>
+                                </div>
+                            </div>
+            
+                        </div>
 
-        <section class="small-projects container">
+                        <div id="project3">
+                            <div class="split overview">
+                                <div>
+                                    <img src="images/apps/CtP-Home.png" alt="Github view of app" />
+                                </div>
+                                <div>
+                                    <h2>Traveller's Restival - Festival</h2>
+                                    <h3>Project Brief</h3>
+                                    <p>A website designed to advertise a local beer/music festival in England, 
+                                        as well as provide information to festival-goers on the day.</p>
+                                    <h3>Requirements</h3>
+                                    <p>A simple site that will load easily in a place with spotty cell service. 
+                                        The logo, a brief summary, festival line-up and more information was given by client. 
+                                        It was to be used primarily on cell phones.
+                                    </p>
+                                    <h3>Technology Used</h3>
+                                    <p>HTML || CSS || Bootstrap</p>
+                                    <h3>Design</h3>
+                                    <p>
+                                        I created this website from scratch, as I wanted to be sure that there was no 
+                                        unnecessary code. It's completely responsive and designed for mobile first. The 
+                                        festival overview information comes before in-depth details, to keep bounce rate low
+                                        for those just looking.
+                                    </p>
+                                    <h3>Links</h3>
+                                    <a href="https://github.com/dannypellatt/CrossThePondUKToUSWords">View Code</a>
+                                    <a href="#">Video Presentation</a>
+                                    <a href="#">Deep Dive</a>
+                                </div>
+                            </div>
+            
+                        </div>
 
-            <!-- small projects nav bar-->
-            <section class="project-choices">
-                <h2>Small Projects:</h2>
-                <div class="split radio_tabs">
-                    <div class="radio_mark">
-                        <h3>Swanson Goes West</h3>
-                        <p>Console Application</p>
-                        <p>ASP .NET Core</p>
-                    </div>
-                    <div class="radio_mark">
-                        <h3>gimmepizza</h3>
-                        <p>Web Application</p>
-                        <p>.NET Core MVC</p>
-                    </div>
+                        <div id="project4">
+                            <div class="split overview">
+                                <div>
+                                    <img src="images/apps/CtP-Home.png" alt="Github view of app" />
+                                </div>
+                                <div>
+                                    <h2>Danny Pellatt's Portfolio - This Website Right Here</h2>
+                                    <h3>Project Brief</h3>
+                                    <p>Showcase my code and a little of my personality. Make the visitor (you) think "Gee, now this 
+                                        is someone I want to work with! Where's my phone to call them..."
+                                    </p>
+                                    <h3>Requirements</h3>
+                                    <p>A clean, impressive website that keeps a potential employer interested. So go on, kick off 
+                                        your shoes. Mosey around a while. I hope you enjoy it.
+                                    </p>
+                                    <h3>Technology Used</h3>
+                                    <p>HTML || CSS || Bootstrap</p>
+                                    <h3>Design</h3>
+                                    <p>
+                                        I designed this website without using a template to try and best show my capabilities. I chose 
+                                        to only use one page as <a href="#">most users prefer scrolling to clicking</a> and, an improved
+                                        user experience <a href="https://cxl.com/blog/great-user-experience-ux-leads-to-conversions/">is 
+                                        directly related to higher conversion.</a> I also wanted to optimize for multi-device support.  
+                                    </p>
+                                    <h3>Links</h3>
+                                    <a href="#">View Code</a>
+                                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link, but you're already here, so...</a>
+                                </div>
+                            </div>
+            
+                        </div>
+
+                    </section>
+
                 </div>
-            </section>
-    
-            <!-- large projects portfolio pieces -->
-            <section class="portfolio-pieces">
-    
-                <div id="project1">
-                    <div class="split overview">
-                        <div>
-                            <img src="images/apps/CtP-Home.png" alt="Github view of app" />
-                        </div>
-                        <div>
-                            <h2>Swanson Goes West - Project - RestAPI Console App</h2>
-                            <h3>Project Brief</h3>
-                            <p>Create an application that simulates a conversation between Kanye West and Ron Swanson.</p>
-                            <h3>Features</h3>
-                            <p>This application call two different API's, one that returns random Kanye West quotes 
-                                as a JSON object, and another that returns Ron Swanson quotes as a JSON array. 
-                                The NewtonSoft.JSON package parsed these into strings. LINQ was used to trim and replace letters and 
-                                a delay was inserted, and I concetenated in the correct punctuation, making the display look 
-                                like a real online conversation.
-                            </p>
-                            <h3>Technology Used</h3>
-                            <p>ASP .Net Core || C# || RestAPIs || RapidAPI || Github || JSON || NewtonSoft || LINQ</p>
-                            <h3>Design</h3>
-                            <p>As this was a console application, the design revolved around delaying and manipulating the lines with C#.
-                            </p>
-                            <h3>Links</h3>
-                            <a href="https://github.com/dannypellatt/CrossThePondUKToUSWords">View Code</a>
-                            <a href="#">Video Presentation</a>
-                            <a href="#">Deep Dive</a>
-                        </div>
-                    </div>
-    
-                </div>
-
-                <div id="project2">
-                    <div class="split overview">
-                        <div>
-                            <img src="images/apps/BestBuy-Home.png" alt="Landing page of app" />
-                        </div>
-                        <div>
-                            <h2>gimmepizza - Personal Project - .NET Core MVC Web App</h2>
-                            <h3>Project Brief</h3>
-                            <p>One 18 inch pizza is more than two 12 inch pizzas. Create a web page that allows users to 
-                                input pizza sizes and quantity, then calculate the amount in square inches.</p>
-                            <h3>Features</h3>
-                            <p>A simple web page that has two separate input boxes and a calculate button. The answer is 
-                                rounded using LINQ and displayed to the user. HTML and CSS are used in the view to create an 
-                                appealing landing page</p>
-                            <h3>Technology Used</h3>
-                            <p>ASP .Net Core MVC || C# || LINQ || HTML || CSS </p>
-                            <h3>Design</h3>
-                            <p>The design for this application was purposely kept very basic, not deviating from the standard view as per instructions.</p>
-                            <h3>Metrics & Accolades</h3>
-                            <p>Top marks awarded by class instructor</p>
-                            <h3>Links</h3>
-                            <a href="https://github.com/dannypellatt/BestBuyProject">View Code</a>
-                            <a href="#">Video Presentation</a>
-                            <a href="#">Deep Dive</a>
-                        </div>
-                    </div>
-    
-                    <div class="split details">
-                        <div class="">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/BestBuy-Github.png" alt=" of app"/>
-    
-                            <h3>ASP .NET Core MVC</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=""/>
-                            <h4>.NET CORE MVC</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur um tenetur distinctio enim labore quasi quibusdam dolores vitae molestias delectus ratione.</p>
-    
-                            <img class="icon" src="images/badges/badgeCSharpB&W.png" alt=".Icon"/>
-                            <h4>C#</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur um tenetur distinctio enim labore quasi quibusdam dolores vitae molestias delectus ratione.</p>
-    
-                            <img class="icon" src="images/badges/b.png" alt=" Icon"/>
-                            <h4>HTML & CSS</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur um tenetur distinctio enim labore quasi quibusdam dolores vitae molestias delectus ratione.</p>
-                        </div>
-    
-                        <div class="">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/CtP-.png" alt=" of app"/>
-    
-                            <h3>SQL</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/badgeMySQLB&W.png" alt=""/>
-                            <h4>MySQL</h4>
-                            <p>Used the MySQL workbench in order to manipulate the data.</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=".Icon"/>
-                            <h4>Plugins</h4>
-                            <p>Used the popular Dapper and MySQL data NuGet packages within the .NET framework to translate the data.</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=" Icon"/>
-                            <h4>Advanced Queries</h4>
-                            <p>Used JOIN and UNION to combine data from different tables.</p>
-                            
-                            <img class="icon" src="images/badges/.png" alt=" Icon"/>
-                            <h4></h4>
-                            <p></p>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <div id="project3">
-                    <div class="split overview">
-                        <div>
-                            <img src="images/apps/CtP-Home.png" alt="Github view of app" />
-                        </div>
-                        <div>
-                            <h2>TacoBell Geolocator - Project - Team Console Application</h2>
-                            <h3>Project Brief</h3>
-                            <p>Work with a team of developers to find the two furthest TacoBell locations.</p>
-                            <h3>Features</h3>
-                            <p>Finds and collects the coordinates of all TacoBell locations within the continental US, 
-                                then calculates the distances between them. The two furthest restaurants and their distance 
-                                from one another is displayed on the console.</p>
-                            <h3>Technology Used</h3>
-                            <p>ASP .NET Core || C# || MySQL || APIs || Test Driven Development || NuGet</p>
-                            <h3>Design</h3>
-                            <p>As this application displays the results on the console, no design was necessary.</p>
-                            <h3>Metrics & Accolades</h3>
-                            <p>Good feedback on our ability to work as a team, specifically splitting apart tasks, planning and presentation.</p>
-                            <h3>Links</h3>
-                            <a href="#">View Code</a>
-                            <a href="#">Video Presentation</a>
-                            <a href="#">Deep Dive</a>
-                        </div>
-                    </div>
-    
-                    <div class="split details">
-                        <div class="">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/BestBuy-Github.png" alt=" of app"/>
-    
-                            <h3>Coding</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=""/>
-                            <h4>ASP .Net Core</h4>
-                            <p></p>
-    
-                            <img class="icon" src="images/badges/badgeCSharpB&W.png" alt=".Icon"/>
-                            <h4>C#</h4>
-                            <p></p>
-    
-                            <img class="icon" src="images/badges/badgeMySQLB&W.png" alt=" Icon"/>
-                            <h4>SQL</h4>
-                            <p></p>
-                            
-                        </div>
-    
-                        <div class="">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/CtP-.png" alt=" of app"/>
-    
-                            <h3>Teamwork</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=""/>
-                            <h4>Github</h4>
-                            <p>Created branches to work on individual pieces of code, pushing after presenting.</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=".Icon"/>
-                            <h4>Collaboration</h4>
-                            <p>Worked with team remotely through Zoom and Discord to envision, explore, and finalize the project.</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=" Icon"/>
-                            <h4>Adaptation</h4>
-                            <p>Continually adapted the workflow according to the team's need. 
-                                Some projects proved lengthier than when first planned, so adjustments to workflow were needed.</p>
-                            
-                        </div>
-                        
-                        <div class="">  <!-- CLASS NEEDED -->
-                            <img src="images/apps/CtP-.png" alt=" of app"/>
-    
-                            <h3>Test Driven Development</h3>
-                            <p>__________________</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=""/>
-                            <h4>xUnit</h4>
-                            <p>Built cases first using the popular testing tool within the .NET Framework to confirm our results.</p>
-    
-                            <img class="icon" src="images/badges/.png" alt=".Icon"/>
-                            <h4>TDD Cycle</h4>
-                            <p>We added the test, then ran for the expected failures. We wrote the simplest code, 
-                                then removed duplicates and rearranged, testing after each refactor to confirm continued functionality.</p>
-    
-                        </div>
-                        
-                    </div>
-                </div>
-
-            </section>
-
-        </section>
-        
-        <!-- freelance websites -->
-
-        <section class="freelance-websites container">
-
-            <!-- freelance websites nav bar-->
-            <section class="project-choices">
-                <h2>Freelance Websites:</h2>
-                <div class="split radio_tabs">
-                    <div class="radio_mark">
-                        <h3>NGP Handyman</h3>
-                    </div>
-                    <div class="radio_mark">
-                        <h3>Crofton Music</h3>
-                    </div>
-                    <div class="radio_mark">
-                        <h3>Traveller's Restival</h3>
-                    </div>
-                </div>
-            </section>
-    
-            <!-- freelance websites portfolio pieces -->
-            <section class="portfolio-pieces">
-    
-                <div id="project1">
-                    <div class="split overview">
-                        <div>
-                            <img src="images/apps/CtP-Home.png" alt="Github view of app" />
-                        </div>
-                        <div>
-                            <h2>NGP Handyman - Website - Small Handyman Business</h2>
-                            <h3>Project Brief</h3>
-                            <p>A website showcasing the business of a handyman in the South of England. </p>
-                            <h3>Requirements</h3>
-                            <p>A simple and easily navigable website, as client has mostly older customers. 
-                                Needed an about section, services offered and a contact form.
-                            </p>
-                            <h3>Technology Used</h3>
-                            <p>HTML || CSS || Bootstrap</p>
-                            <h3>Design</h3>
-                            <p>
-                                I used a free template in order to create this website, as the client wanted to see some 
-                                examples and then pick his favorite. For ease of use, it is only one page, with a sticky nav-bar,
-                                simple, intuitive sections, and left-aligned text.
-                            </p>
-                            <h3>Links</h3>
-                            <a href="https://github.com/dannypellatt/CrossThePondUKToUSWords">View Code</a>
-                            <a href="#">Video Presentation</a>
-                            <a href="#">Deep Dive</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="project2">
-                    <div class="split overview">
-                        <div>
-                            <img src="images/apps/BestBuy-Home.png" alt="Landing page of app" />
-                        </div>
-                        <div>
-                            <h2>Crofton Music - Musician Page</h2>
-                            <h3>Project Brief</h3>
-                            <p>A website showcasing the business of a handyman in the South of England. </p>
-                            <h3>Requirements</h3>
-                            <p>A simple and easily navigable website, as client has mostly older customers. 
-                                Needed an about section, services offered and a contact form.
-                            </p>
-                            <h3>Technology Used</h3>
-                            <p>HTML || CSS || Bootstrap</p>
-                            <h3>Design</h3>
-                            <p>
-                                I used a free template in order to create this website, as the client wanted to see some 
-                                examples and then pick his favorite. For ease of use, it is only one page, with a sticky nav-bar,
-                                simple, intuitive sections, and left-aligned text.
-                            </p>
-                            <h3>Links</h3>
-                            <a href="https://github.com/dannypellatt/CrossThePondUKToUSWords">View Code</a>
-                            <a href="#">Video Presentation</a>
-                            <a href="#">Deep Dive</a>
-                        </div>
-                    </div>
-    
-                </div>
-
-                <div id="project3">
-                    <div class="split overview">
-                        <div>
-                            <img src="images/apps/CtP-Home.png" alt="Github view of app" />
-                        </div>
-                        <div>
-                            <h2>Traveller's Restival - Festival</h2>
-                            <h3>Project Brief</h3>
-                            <p>A website designed to advertise a local beer/music festival in England, 
-                                as well as provide information to festival-goers on the day.</p>
-                            <h3>Requirements</h3>
-                            <p>A simple site that will load easily in a place with spotty cell service. 
-                                The logo, a brief summary, festival line-up and more information was given by client. 
-                                It was to be used primarily on cell phones.
-                            </p>
-                            <h3>Technology Used</h3>
-                            <p>HTML || CSS || Bootstrap</p>
-                            <h3>Design</h3>
-                            <p>
-                                I created this website from scratch, as I wanted to be sure that there was no 
-                                unnecessary code. It's completely responsive and designed for mobile first. The 
-                                festival overview information comes before in-depth details, to keep bounce rate low
-                                for those just looking.
-                            </p>
-                            <h3>Links</h3>
-                            <a href="https://github.com/dannypellatt/CrossThePondUKToUSWords">View Code</a>
-                            <a href="#">Video Presentation</a>
-                            <a href="#">Deep Dive</a>
-                        </div>
-                    </div>
-    
-                </div>
-
-                <div id="project4">
-                    <div class="split overview">
-                        <div>
-                            <img src="images/apps/CtP-Home.png" alt="Github view of app" />
-                        </div>
-                        <div>
-                            <h2>Danny Pellatt's Portfolio - This Website Right Here</h2>
-                            <h3>Project Brief</h3>
-                            <p>Showcase my code and a little of my personality. Make the visitor (you) think "Gee, now this 
-                                is someone I want to work with! Where's my phone to call them..."
-                            </p>
-                            <h3>Requirements</h3>
-                            <p>A clean, impressive website that keeps a potential employer interested. So go on, kick off 
-                                your shoes. Mosey around a while. I hope you enjoy it.
-                            </p>
-                            <h3>Technology Used</h3>
-                            <p>HTML || CSS || Bootstrap</p>
-                            <h3>Design</h3>
-                            <p>
-                                I designed this website without using a template to try and best show my capabilities. I chose 
-                                to only use one page as <a href="#">most users prefer scrolling to clicking</a> and, an improved
-                                user experience <a href="https://cxl.com/blog/great-user-experience-ux-leads-to-conversions/">is 
-                                directly related to higher conversion.</a> I also wanted to optimize for multi-device support.  
-                            </p>
-                            <h3>Links</h3>
-                            <a href="#">View Code</a>
-                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link, but you're already here, so...</a>
-                        </div>
-                    </div>
-    
-                </div>
-
-            </section>
-
-        </section>
+            
+            </div>    
 
         </section>
 
@@ -791,11 +789,61 @@
     <!-- START about me SECTION-->
 
         <section>
-            
+            <div>
+                <h2>About Me:</h2>
+                <p>Full stack software developer specializing in C#, 
+                    with over 4 years experience building websites, and 1+ 
+                    year freelance experience. I design, develop, 
+                    analyze, and implement client-server, mobile, web, 
+                    and desktop-based applications. 
+                    Avid learner excited to pick up new technologies.
+                </p>
+                <p>
+                    Demonstrable skill in ASP .NET Core, C#, MySQL, HTML, 
+                    CSS, JavaScript & Python. Knowledge of object 
+                    oriented programming, cloud services, debugging, 
+                    test driven development, frameworks, and git. 
+                </p>
+                <p>
+                    A confident, friendly and ambitious person with 
+                    excellent analytical, problem-solving and organizational 
+                    skills. I have a B.S. in Geology from the University of 
+                    Plymouth, England, and certification in software 
+                    engineering from TrueCoders boot camp.
+                </p>
+                <h2>Contact:</h2>
+                <p>Phone: 202-599-4606 || Email: dannyrgoodwin@gmail.com</p>
+            </div>
+            <div>
+
+            </div>
         </section>
 
     <!-- END about me SECTION-->
+
+    <!-- START resume & links SECTION-->
+
+        <section>
+            <div id="resume">
+                <h2>Check out my full <strong>resume:</strong></h2>
+                <button><a href="https://docs.google.com/document/d/1kuxffRUPbmaH1yuzOYfoqzzy75D9EG-G4JcC2sS4Hvo/edit?usp=sharing" target="_blank">Docs</a></button>
+                <button><a href="https://drive.google.com/file/d/1KmtSwpTv9grkOvQ1p9NuKV2NmYAWt8FL/view?usp=sharing" target="_blank">PDF</a></button>
+                <button><a href="https://dannypellattresume.netlify.app/" target="_blank">Website</a></button>
+            </div>
+            <div id="links">
+                <h2>Or follow these <strong>links:</strong></h2>
+                <button><a href="https://www.linkedin.com/in/dannypellatt/" target="_blank">LinkedIn</a></button>
+                <button><a href="https://github.com/dannypellatt/" target="_blank">Github</a></button>
+            </div>
+        </section>
+
+    <!-- END resume & links SECTION-->
     </main>
 
+
+    <section>
+        <script src="main.js"></script>
+    </section>
+    
 </body>
 </html>

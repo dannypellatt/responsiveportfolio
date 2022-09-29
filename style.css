@@ -106,7 +106,6 @@ header, section {
     color: black;
     max-width: 250px;
     padding: 10px;
-    padding-top: 25px;
   }
   
   .radio_tabs input[type="radio"] {
@@ -123,4 +122,18 @@ header, section {
     background:#DDD;
   }
 
+  label.selected{
+    background:#DDD;
+  }
+
+  .radio_tabs {
+    padding-bottom: 3em;
+  }
+
 /* END portfolio SECTION */
+
+
+
+
+
+.desc { display: none; }

@@ -1,5 +1,4 @@
 
-
 $(document).ready(function(){ 
     var lastBoxOpened = 0;
     
@@ -33,14 +32,15 @@ $(document).ready(function(){
     }); 
 });
 
-
+// makes the category highlighted when chosen
 $('.radio_mark_category').on('click', function(){
     $('.radio_mark_category').removeClass('selected');
     $('.radio_mark_project').removeClass('selected');
     $(this).addClass('selected');
 });
-
 $('.radio_mark_project').on('click', function(){
     $('.radio_mark_project').removeClass('selected');
     $(this).addClass('selected');
 });
+
+

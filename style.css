@@ -54,7 +54,9 @@ header, section {
     }
 }
 
-
+.padding-on-edges {
+    padding: 0 3em;
+}
 
 @media (min-width: 40em) {
     .split {
@@ -77,7 +79,7 @@ header, section {
 }
 
 .container {
-    margin: 2em;
+    margin: 1em;
 }
 
 /* END global SECTION */
@@ -86,24 +88,28 @@ header, section {
 
 header {
     background: black;
-    font-size: 1em;
-    overflow: hidden;
     width: 100%;
-    font-size: 3rem;
+    font-size: 1.5rem;
+    padding: 0;
     position: fixed;
 }
 
-  .topnav a {
+.topnav a {
     color: white;
     text-decoration: none;
     display: inline-block;
     padding: 0 1em;
-  }
-  
-  .topnav a:hover {
+}
+
+.topnav a:hover {
     font-weight: bold;
     text-decoration: underline;
-  }
+}
+
+nav ul {
+    text-align: right;
+    padding-right: .5em;
+}
 
 /* END navbar SECTION */
 
@@ -113,6 +119,7 @@ header {
 .title {
     color: white;
     background-color: black;
+    padding-top: 40px;
 }
 
 @media (min-width: 40em) {
@@ -144,6 +151,9 @@ header {
 
 .thirtyleft {
     flex: 1 1 30%;
+}
+.fortyleft {
+    flex: 1 1 40%;
 }
 
 .seventyright {
@@ -194,7 +204,15 @@ display: none;
 
 /* END portfolio SECTION */
 
+/* START bio SECTION */
 
+.slideshow {
+    height: max-content;
+    width: 100%;
+}
 
+.carousel-caption {
+    background-color: rgb(0, 0, 0, .4);
+}
 
-
+/* END bio SECTION */

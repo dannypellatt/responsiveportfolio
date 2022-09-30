@@ -43,4 +43,7 @@ $('.radio_mark_project').on('click', function(){
     $(this).addClass('selected');
 });
 
-
+// Stops the carousel from sliding automatically
+$('.carousel').carousel({
+    interval: false,
+  });

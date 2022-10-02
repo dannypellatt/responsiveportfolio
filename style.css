@@ -54,8 +54,19 @@ header, section {
     }
 }
 
-.padding-on-edges {
-    padding: 0 3em;
+.v-small-padding-on-edges, .v-small-padding-on-edges img {
+    padding: 0 1em;
+}
+
+.small-padding-on-edges, .small-padding-on-edges img {
+    padding: 0 2em;
+}
+
+.padding-on-edges, .padding-on-edges img{
+    padding: 0 4em;
+}
+.large-padding-on-edges, .large-padding-on-edges img{
+    padding: 0 6em;
 }
 
 @media (min-width: 40em) {
@@ -63,15 +74,22 @@ header, section {
         display: flex;
         gap: 1em;
     }
-}
-
-@media (min-width: 40em) {
     .even-columns {
         display: flex;
         align-items: flex-start;
         gap: 1em;
         justify-content: center;
     }
+    .hide-when-big {
+        display: none;
+    }
+}
+
+@media (max-width: 40em) {
+    .hide-when-small {
+        display: none;
+    }
+
 }
 
 .even-columns > * {
@@ -80,6 +98,10 @@ header, section {
 
 .container {
     margin: 1em;
+}
+
+.indent {
+    text-indent: 3em;
 }
 
 /* END global SECTION */
@@ -92,6 +114,7 @@ header {
     font-size: 1.5rem;
     padding: 0;
     position: fixed;
+    z-index: 1;
 }
 
 .topnav a {
@@ -166,11 +189,12 @@ nav ul {
 
 .icon {
     max-width: 50%;
+    padding: .2em;
 }
   
 .radio_mark {
 color: black;
-max-width: 250px;
+min-width: 20rem;
 padding: 10px;
 }
 
@@ -180,7 +204,6 @@ display: none;
 }
 
 .radio_tabs label {
-border:3px solid #CCC; 
 cursor:pointer;
 }
 
@@ -201,6 +224,23 @@ padding-bottom: 3em;
 display: none; 
 }
 
+.lp {
+    border: 3px solid rgb(233, 82, 133);
+}
+.mp {
+    border: 3px solid rgb(170, 170, 246);
+}
+.fw {
+    border: 3px solid rgb(125, 224, 69);
+}
+
+@media (min-width: 700px) {
+    
+}
+
+.project-links {
+    display: inline-flex;
+}
 
 /* END portfolio SECTION */
 
@@ -211,8 +251,46 @@ display: none;
     width: 100%;
 }
 
+#aboutme {
+    background-color: var(--clr-primary-300);
+    padding-top: 2em;
+}
+
 .carousel-caption {
-    background-color: rgb(0, 0, 0, .4);
+    opacity: 0;
 }
 
 /* END bio SECTION */
+
+
+
+#resume {
+    background-color: rgb(51, 51, 51);
+    /* border: 1px solid black; */
+    padding: 2rem 2rem;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    color: white;
+    display: flex;
+    width: 100%;
+  }
+  #resume h2 {
+    font-size: 30px;
+    margin-left: 30px;
+  }
+  
+  button {
+    max-width: 100px;
+  }
+
+
+
+  .slideshow, .new-caption-area {
+    margin: auto;
+    color: #000;
+  }
+  
+  .carousel-caption {
+	color: #000;
+}

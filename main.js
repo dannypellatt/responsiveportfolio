@@ -47,3 +47,29 @@ $('.radio_mark_project').on('click', function(){
 $('.carousel').carousel({
     interval: false,
   });
+
+  // clones carousel caption below the image (still one on image, made opaque)
+  jQuery(function ($) {
+    $('.carousel').carousel();
+    var caption = $('div.carousel-item:nth-child(1) .carousel-caption');
+    $('.new-caption-area').html(caption.html());
+    caption.css('display', 'none');
+
+    $(".carousel").on('slide.bs.carousel', function (evt) {
+        var caption = $('div.carousel-item:nth-child(' + ($(evt.relatedTarget).index() + 1) + ') .carousel-caption');
+        $('.new-caption-area').html(caption.html());
+        caption.css('display', 'none');
+    });
+});
+
+
+var check;
+
+$('input[type="radio"]').hover(function() {
+    check = $(this).is(':checked');
+});
+
+$('input[type="radio"]').click(function() {
+    check = !check;
+    $(this).attr("checked", check);
+});

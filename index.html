@@ -34,7 +34,7 @@
                 <a class="nav-link" href="#">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Bio</a>
+                <a class="nav-link" href="#aboutme">Bio</a>
             </li>    
             <li class="nav-item">
                 <a class="nav-link" href="#">Resume</a>
@@ -60,10 +60,10 @@
     <!-- START title SECTION -->
 
         <section id="intro" class="title">
-            <div class="padding-on-edges">
+            <div class="">
                 <section class="intro">
                     <div class="split">
-                        <div class="title-words">
+                        <div class="title-words padding-on-edges">
                             <h1 class="main-title">Danny Pellatt</h1>
                             <h2 class="main-subtitle">Full Stack Software Developer</h2>
                         </div>
@@ -92,111 +92,131 @@
     <!-- START portfolio SECTION -->
 
     <section>
-        
+    <br>    
     <h1 class="text-center">Pick a category to view my work:</h1>
+    <br><br>
     <form class="text-center even-columns radio_tabs">
-        <div><label class="radio_mark radio_mark_category"><input type="radio" name="group1" value="lp1">Large Projects</label></div>  
-        <div><label class="radio_mark radio_mark_category"><input type="radio" name="group1" value="mp1">Mini Projects</label></div>  
-        <div><label class="radio_mark radio_mark_category"><input type="radio" name="group1" value="fw1">Freelance Websites</label></div>  
+        <div><label class="radio_mark radio_mark_category lp"><input type="radio" name="group1" value="lp1">Large Projects</label></div>  
+        <div><label class="radio_mark radio_mark_category mp"><input type="radio" name="group1" value="mp1">Mini Projects</label></div>  
+        <div><label class="radio_mark radio_mark_category fw"><input type="radio" name="group1" value="fw1">Freelance Websites</label></div>  
     </form>
     
         <div id="lp1" class="desc text-center" data-box="1">
                 <form class="even-columns radio_tabs">
-                    <div><label class="radio_mark radio_mark_project"><input type="radio" name="group1" value="lp2">Cross The Pond</label></div>  
-                    <div><label class="radio_mark radio_mark_project"><input type="radio" name="group1" value="lp3">Best Buy Sim</label></div>
-                    <div><label class="radio_mark radio_mark_project"><input type="radio" name="group1" value="lp4">TacoBell Geolocator</label></div>
+                    <div><label class="radio_mark radio_mark_project lp"><input type="radio" name="group1" value="lp2">Cross The Pond</label></div>  
+                    <div><label class="radio_mark radio_mark_project lp"><input type="radio" name="group1" value="lp3">Best Buy Sim</label></div>
+                    <div><label class="radio_mark radio_mark_project lp"><input type="radio" name="group1" value="lp4">TacoBell Geolocator</label></div>
                 </form>
         </div>
             
         <div id="lp2" class="desc" data-box="2">
             <div class="split overview">
-                <div class="overview-image">
+                <div class="overview-image text-center">
                     <h2>Cross The Pond</h2>
-                    <p>Multifunctional Web App</p>
-                    <img src="images/apps/CtP-Home.png" alt="Github view of app" />
+                    <p>Class Project</p>
+                    <p>ASP .NET Core MVC<br>Multifunctional Web Application</p>
+                    <img  src="images/apps/CtP-Home.png" alt="Github view of app" />
                     <br>
-                    <div class="text-center">
+                    <div class="project-links text-center">
                         <a href="https://github.com/dannypellatt/CrossThePondUKToUSWords">View Code</a>
+                        <p class="small-padding-on-edges"> || </p>
                         <a href="#">Video Presentation</a>
+                        <p class="small-padding-on-edges"> || </p>
                         <a href="#">Deep Dive</a>
+                        
                     </div>
-                    
+                    <br>
+                    <br>
                 </div>
                 <div>
-                    <h3>Project Brief</h3>
-                    <p>A multifunctional travel application aiding visits 
+                    <h3>Project Brief:</h3>
+                    <p class="indent">A multifunctional travel application aiding visits 
                         to Britain for Americans, and America for the British.</p>
-                    <p>The purpose of this app is to act as a guide to the small differences between 
+                    <p class="indent">The purpose of this app is to act as a guide to the small differences between 
                         the UK and the US. It includes a translation dictionary, live weather searchable 
                         by city, a temperature converter, and a tipping calculator. It was the final project
                         piece for my bootcamp.</p>
-                    <h3>Technology Used</h3>
+                    <h3>Technology Used:</h3>
                     <p>ASP .Net Core MVC || C# || MySQL || RestAPIs || HTML || CSS || Bootstrap || JQuery || JSON || Dapper || RestSharp || Postman</p>
-                    <h3>Design</h3>
-                    <p>I chose a fun and cartoony theme, and a color scheme that fit with the red, white and blue 
+                    <h3>Design:</h3>
+                    <p class="indent">I chose a fun and cartoony theme, and a color scheme that fit with the red, white and blue 
                         flags. I used free-to-use icons, manipulated with photoshop for graphics. I worked with a graphic 
                         designer, who advised tweaks to improve readability, layout and styling.
                     </p>
-                    <h3>Metrics & Accolades</h3>
-                    <p>This project was is featured by my bootcamp in their portfolio page, highlighting 10 of the best 
+                    <h3>Metrics & Accolades:</h3>
+                    <p class="indent">This project is featured by my bootcamp in their portfolio page, highlighting 10 of the best 
                         final projects made by past students.</p>      
                 </div>
             </div>
             
             <div class="even-columns details img-center">
-                <div class="col ">  <!-- CLASS NEEDED -->
-                    <img src="images/apps/CtP-Weather.png" alt="Weather page of app"/>
+                <div class="col text-center small-padding-on-edges">  <!-- CLASS NEEDED -->
+                    <div class="projects-in-detail text-center  ">
+                        <img src="images/apps/CtP-Weather.png" alt="Weather page of app"/>
         
-                    <h3>Weather API</h3>
-                    <p>__________________</p>
-        
-                    <img class="icon" src="images/badges/badgeapi.png" alt="API Icon"/>
-                    <h4>OpenWeather</h4>
-                    <p>Called two different APIs to display current temperature and weather in a chosen US, or UK city.</p>
-        
-                    <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".NetCore Icon"/>
-                    <h4>.Net Core MVC</h4>
-                    <p>Different views created to display US or UK options. Controller called one of two APIs, dependant on user destination, with the model showing only relevant information.</p>
+                        <h3>Weather API</h3>
+                        <p class="hide-when-big">Learn more</p>
+                        <p>__________________</p>
+                    </div>
                     
-                    <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
-                    <h4>C#</h4>
-                    <p>Used classes in models depending on direction alongside if statements within controller to check if input is valid, then call correct API.</p>
-        
-                    <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
-                    <h4>HTML & CSS</h4>
-                    <p>HTML and CSS displays results in an easily navigable and visually appealing way.</p>
+                    <div class="hide-when-small text-center">
+                        <img class="icon" src="images/badges/badgeapi.png" alt="API Icon"/>
+                        <h4>OpenWeather</h4>
+                        <p>Called two different APIs to display current temperature and weather in a chosen US, or UK city.</p>
+            
+                        <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".NetCore Icon"/>
+                        <h4>.Net Core MVC</h4>
+                        <p>Different views created to display US or UK options. Controller called one of two APIs, dependant on user destination, with the model showing only relevant information.</p>
+                        
+                        <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
+                        <h4>C#</h4>
+                        <p>Used classes in models depending on direction alongside if statements within controller to check if input is valid, then call correct API.</p>
+            
+                        <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
+                        <h4>HTML & CSS</h4>
+                        <p>HTML and CSS displays results in an easily navigable and visually appealing way.</p>
+                    </div>
                 </div>
         
-                <div class="col">  <!-- CLASS NEEDED -->
-                    <img src="images/apps/CtP-Words.png" alt="Translator page of app"/>
-        
-                    <h3>Language Translator</h3>
-                    <p>__________________</p>
-        
-                    <img class="icon" src="images/badges/badgeMySQLB&W.png" alt="SQL Icon"/>
-                    <h4>MySQL</h4>
-                    <p>Built & manipulated database using MySQL on the back end.</p>
-        
-                    <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".Net Icon"/>
-                    <h4>.Net Core MVC</h4>
-                    <p>Different views created with an MVC controller to display data alphabetically. Inheritance used for optimization.</p>
-        
-                    <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
-                    <h4>C#</h4>
-                    <p>Used C# functions within repository to create different displayable lists from IEnumerables, as well as within the model to fetch columns.</p>
+                <div class="col small-padding-on-edges">  <!-- CLASS NEEDED -->
+
+                    <div class="projects-in-detail text-center">
+                        <img src="images/apps/CtP-Words.png" alt="Translator page of app"/>
+                        <h3>Language Translator</h3>
+                        <p class="hide-when-big">Learn more</p>
+                        <p>__________________</p>
+                    </div>
                     
-                    <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
-                    <h4>HTML & CSS</h4>
-                    <p>Used HTML & CSS to display page navigation and relevant table</p>
+                    <div class="hide-when-small text-center">
+                        <img class="icon" src="images/badges/badgeMySQLB&W.png" alt="SQL Icon"/>
+                        <h4>MySQL</h4>
+                        <p>Built & manipulated database using MySQL on the back end.</p>
+            
+                        <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".Net Icon"/>
+                        <h4>.Net Core MVC</h4>
+                        <p>Different views created with an MVC controller to display data alphabetically. Inheritance used for optimization.</p>
+            
+                        <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
+                        <h4>C#</h4>
+                        <p>Used C# functions within repository to create different displayable lists from IEnumerables, as well as within the model to fetch columns.</p>
+                        
+                        <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
+                        <h4>HTML & CSS</h4>
+                        <p>Used HTML & CSS to display page navigation and relevant table</p>
+                    </div>
                 </div>
                 
                 <div class="col">  <!-- CLASS NEEDED -->
-                    <img src="images/apps/CtP-Temp.png" alt="Temperature page of app"/>
-        
-                    <h3>Temperature Converter</h3>
-                    <p>__________________</p>
-        
-                    <img class="icon" src="images/badges/badgecalculator.png" alt="calculator app"/>
+
+                    <div class="projects-in-detail text-center">
+                        <img src="images/apps/CtP-Temp.png" alt="Temperature page of app"/>
+                        <h3>Temperature Converter</h3>
+                        <p class="hide-when-big">Learn more</p>
+                        <p>__________________</p>
+                    </div>
+                    
+                    <div class="hide-when-small text-center">
+                        <img class="icon" src="images/badges/badgecalculator.png" alt="calculator app"/>
                     <h4>Calculator</h4>
                     <p>A calculator with two buttons, one to convert input into C and the other to F.</p>
         
@@ -211,31 +231,45 @@
                     <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
                     <h4>HTML & CSS</h4>
                     <p>Displayed an easily navigable calculator with separate how to and fact sections.</p>
+                    </div>
+
+                    
+        
+                    
                 </div>
                 
                 <div class="col">  <!-- CLASS NEEDED -->
-                    <img src="images/apps/CtP-Tipping.png" alt=" of app"/>
-        
-                    <h3>Tipping Calculator</h3>
-                    <p>__________________</p>
-        
-                    <img class="icon" src="images/badges/badgecalculator.png" alt="calculator app"/>
-                    <h4>Calculator</h4>
-                    <p>Allows user to input check amount, then pick what tip to give. Calculates both tip amount and total.</p>
-        
-                    <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".Net Icon"/>
-                    <h4>.Net Core MVC</h4>
-                    <p>Two different views created to display UK and US information and calculators. 
-                        Used the model and the controller to return the results dependant on which button was pressed.
-                    </p>
-        
-                    <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
-                    <h4>C#</h4>
-                    <p>If statements were used for each tip amount, changing two different ViewData. LINQ was used to round and convert the results to a string.</p>
+
+                    <div class="projects-in-detail text-center">
+                        <img src="images/apps/CtP-Tipping.png" alt=" of app"/>
+                        <h3>Tipping Calculator</h3>
+                        <p class="hide-when-big">Learn more</p>
+                        <p>__________________</p>
+                    </div>
+                        
+                    <div class="hide-when-small text-center">
+                        <img class="icon" src="images/badges/badgecalculator.png" alt="calculator app"/>
+                        <h4>Calculator</h4>
+                        <p>Allows user to input check amount, then pick what tip to give. Calculates both tip amount and total.</p>
+            
+                        <img class="icon" src="images/badges/badge.NETCoreB&W.png" alt=".Net Icon"/>
+                        <h4>.Net Core MVC</h4>
+                        <p>Two different views created to display UK and US information and calculators. 
+                            Used the model and the controller to return the results dependant on which button was pressed.
+                        </p>
+            
+                        <img class="icon" src="images/badges/badgeCSharpB&W.png" alt="C# Icon"/>
+                        <h4>C#</h4>
+                        <p>If statements were used for each tip amount, changing two different ViewData. LINQ was used to round and convert the results to a string.</p>
+                        
+                        <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
+                        <h4>HTML & CSS</h4>
+                        <p>Either two or three buttons were displayed, depending on the page. A wordy page was broken up into readable sections.</p>
+                    </div>
+
                     
-                    <img class="icon" src="images/badges/badgeHTMLB&W.png" alt="HTML Icon"/>
-                    <h4>HTML & CSS</h4>
-                    <p>Either two or three buttons were displayed, depending on the page. A wordy page was broken up into readable sections.</p>
+        
+                    
                 </div>
             </div>
         </div>
@@ -245,14 +279,13 @@
                 <div  class="text-center">
                     <h2>Best Buy Sim</h2>
                     <p>Class Project</p>
-                    <p>ASP .NET Core MVC CRUD Application</p>
+                    <p>ASP .NET Core<br>MVC CRUD Application</p>
                     <img src="images/apps/BestBuy-Home.png" alt="Landing page of app" />
                     <a href="https://github.com/dannypellatt/BestBuyProject">View Code</a>
                     <a href="#">Video Presentation</a>
                     <a href="#">Deep Dive</a>
                 </div>
                 <div>
-                    <h2> - Class Project - ASP .NET Core MVC CRUD Application</h2>
                     <h3>Project Brief</h3>
                     <p>Create a web page in .Net Core MVC that can display, update, delete from, and input data into a SQL database of BestBuy Products</p>
                     <p>It allows users to view the ID, name, price, category, stock level, of BestBuy products and whether they are on sale. You can also create and view individual products, as well as deleting and updating their information in the database.</p>
@@ -338,7 +371,14 @@
             </div>
         
             <div class="split details">
-                <div class="">  <!-- CLASS NEEDED -->
+                <div class="col">  <!-- CLASS NEEDED -->
+                    <div class="projects-in-detail text-center">
+
+                    </div>
+                    
+                    <div class="hide-when-small">
+
+                    </div>
                     <img src="images/apps/BestBuy-Github.png" alt=" of app"/>
         
                     <h3>Coding</h3>
@@ -358,7 +398,14 @@
                     
                 </div>
         
-                <div class="">  <!-- CLASS NEEDED -->
+                <div class="col">  <!-- CLASS NEEDED -->
+                    <div class="projects-in-detail text-center">
+
+                    </div>
+                    
+                    <div class="hide-when-small">
+
+                    </div>
                     <img src="images/apps/CtP-.png" alt=" of app"/>
         
                     <h3>Teamwork</h3>
@@ -379,7 +426,14 @@
                     
                 </div>
                 
-                <div class="">  <!-- CLASS NEEDED -->
+                <div class="col">  <!-- CLASS NEEDED -->
+                    <div class="projects-in-detail text-center">
+
+                    </div>
+                    
+                    <div class="hide-when-small">
+
+                    </div>
                     <img src="images/apps/CtP-.png" alt=" of app"/>
         
                     <h3>Test Driven Development</h3>
@@ -403,8 +457,8 @@
     
         <div id="mp1" class="desc text-center" data-box="5">
                 <form class="even-columns radio_tabs">
-                    <div><label class="radio_mark radio_mark_project"><input type="radio" name="group1" value="mp2">Swanson Goes West</label></div>  
-                    <div><label class="radio_mark radio_mark_project"><input type="radio" name="group1" value="mp3">gimmepizza</label></div>
+                    <div><label class="radio_mark radio_mark_project mp"><input type="radio" name="group1" value="mp2">Swanson Goes West</label></div>  
+                    <div><label class="radio_mark radio_mark_project mp"><input type="radio" name="group1" value="mp3">gimmepizza</label></div>
                 </form>
         </div>
             
@@ -470,9 +524,9 @@
     
         <div id="fw1" class="desc text-center" data-box="8">
                 <form class="even-columns radio_tabs">
-                    <div><label class="radio_mark radio_mark_project"><input type="radio" name="group1" value="fw2">NGP Handyman</label></div>  
-                    <div><label class="radio_mark radio_mark_project"><input type="radio" name="group1" value="fw3">Crofton Music</label></div>
-                    <div><label class="radio_mark radio_mark_project"><input type="radio" name="group1" value="fw3">Traveler's Restival</label></div>
+                    <div><label class="radio_mark radio_mark_project fw"><input type="radio" name="group1" value="fw2">NGP Handyman</label></div>  
+                    <div><label class="radio_mark radio_mark_project fw"><input type="radio" name="group1" value="fw3">Crofton Music</label></div>
+                    <div><label class="radio_mark radio_mark_project fw"><input type="radio" name="group1" value="fw3">Traveler's Restival</label></div>
                 </form>
         </div>
             
@@ -574,64 +628,76 @@
     
     <!-- START about me SECTION-->
 
-        <section class="split padding-on-edges">
+        <section id="aboutme" class="split padding-on-edges">
             <div class="fortyleft">
                 <h2>About Me:</h2>
-                <p>Full stack software developer specializing in C#, 
+                <br>
+                <p class="indent">Full stack software developer specializing in C#, 
                     with over 4 years experience building websites, and 1+ 
                     year freelance experience. I design, develop, 
                     analyze, and implement client-server, mobile, web, 
                     and desktop-based applications. 
                     Avid learner excited to pick up new technologies.
                 </p>
-                <p>
+                <p class="indent">
                     Demonstrable skill in ASP .NET Core, C#, MySQL, HTML, 
                     CSS, JavaScript & Python. Knowledge of object 
                     oriented programming, cloud services, debugging, 
                     test driven development, frameworks, and git. 
                 </p>
-                <p>
+                <p class="indent">
                     A confident, friendly and ambitious person with 
                     excellent analytical, problem-solving and organizational 
                     skills. I have a B.S. in Geology from the University of 
                     Plymouth, England, and certification in software 
                     engineering from TrueCoders boot camp.
                 </p>
-                <h2>Contact:</h2>
-                <p>Phone: 202-599-4606 || Email: dannyrgoodwin@gmail.com</p>
             </div>
-            <div class="slideshow padding-on-edges">
+            <div class="slideshow">
+                <p class="text-center">Click through to see my software development journey!</p>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img class="d-block w-100" src="images/about/gradphoto.jpeg" alt="Graduating Univerity">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Attending Plymouth University, England</h5>
-                            <p>Born and raised in the south of England, I was the first of my family to go to college. This is where I began playing with software, graduating with a BS in Geology in 2014.</p>
+                        <p class="block-under-image"></p>
+                        <div class="carousel-caption d-none d-md-block user-select-none">
+                            <h5>Graduating Plymouth University, England</h5>
+                            <p>Born and raised in the south of England, I was the first of my family to go to college. This is where 
+                                I began playing with software, to analyze the data collected in the field.
+                                I graduated with a BS in Geology in 2014.</p>
                           </div>
                       </div>
                       <div class="carousel-item">
                         <img class="d-block w-100" src="images/about/MeMusic.PNG" alt="Music Career">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Graduating University</h5>
-                            <p>After graduating, I was signed as a singer-songwriter, getting to tour the world playing my music. 
-                                I learned HTML, CSS, and Javascript to build my own website. Through family and friends, I began work as a freelance web-developer on the side.</p>
+                        <div class="carousel-caption d-none d-md-block user-select-none">
+                            <h5>First Career</h5>
+                            <p>Following college, I was signed as a singer-songwriter, getting to tour the world. After a few years, I returned to England and started my own music business. 
+                                I learned HTML, CSS, and Javascript to build my website. Through family and friends, I began doing some freelance web-development on the side.</p>
                           </div>
                       </div>
                       <div class="carousel-item">
                         <img class="d-block w-100" src="images/about/MeComputer.JPG" alt="Graduated bootcamp">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-none d-md-block user-select-none">
                             <h5>Moving to America</h5>
                             <p>I became a permanent US resident in 2021, giving me a good opportunity to 
-                                plan my next chapter. I realized the reasons I love music are the same reasons 
-                                I love software development. I went back to school to learn to become a 
-                                full stack developer, learning ASP .NET Core MVC, C#, Git, OOD, TDD, and more.
+                                plan my next chapter. I realized the reasons I love music are what makes a good developer. 
+                                Creative thinking, a desire to learn, perseverance, attention to detail, and 
+                                breaking down complex pieces into manageable chunks. 
                             </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="images/about/megandalf.jpeg" alt="Graduated bootcamp">
+                        <div class="carousel-caption d-none d-md-block user-select-none">
+                            <h5>Graduating TrueCoders Boot Camp</h5>
+                            <p>As soon as possible, I went back to school to become a full stack developer. <br>
+                            I learned ASP .NET Core MVC, C#, SQL, Git, OOP, TDD, debugging, web development, and more.</p>
                         </div>
                       </div>
                     </div>
@@ -644,6 +710,9 @@
                       <span class="sr-only">Next</span>
                     </a>
                   </div>
+                  <br>
+                  <div class="new-caption-area text-center"></div>
+                  
             </div>
         </section>
 
@@ -652,16 +721,17 @@
     <!-- START resume & links SECTION-->
 
         <section>
-            <div id="resume">
+            <div id="resume" class="even-columns">
                 <h2>Check out my full <strong>resume:</strong></h2>
                 <button><a href="https://docs.google.com/document/d/1kuxffRUPbmaH1yuzOYfoqzzy75D9EG-G4JcC2sS4Hvo/edit?usp=sharing" target="_blank">Docs</a></button>
                 <button><a href="https://drive.google.com/file/d/1KmtSwpTv9grkOvQ1p9NuKV2NmYAWt8FL/view?usp=sharing" target="_blank">PDF</a></button>
                 <button><a href="https://dannypellattresume.netlify.app/" target="_blank">Website</a></button>
-            </div>
-            <div id="links">
                 <h2>Or follow these <strong>links:</strong></h2>
                 <button><a href="https://www.linkedin.com/in/dannypellatt/" target="_blank">LinkedIn</a></button>
                 <button><a href="https://github.com/dannypellatt/" target="_blank">Github</a></button>
+            </div>
+            <div id="links">
+
             </div>
         </section>
 

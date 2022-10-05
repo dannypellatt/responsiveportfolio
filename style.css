@@ -89,7 +89,6 @@ header, section {
     .hide-when-small {
         display: none;
     }
-
 }
 
 .even-columns > * {
@@ -234,10 +233,6 @@ display: none;
     border: 3px solid rgb(125, 224, 69);
 }
 
-@media (min-width: 700px) {
-    
-}
-
 .project-links {
     display: inline-flex;
 }
@@ -259,6 +254,28 @@ display: none;
 .carousel-caption {
     opacity: 0;
 }
+
+.slideshow, .new-caption-area {
+    margin: auto;
+    color: #000;
+  }
+  
+  .carousel-caption {
+	color: #000;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 50v;
+    height: 5wv;
+}
+
+
+@media (max-width: 80em) {
+    .carousel-control-next, .carousel-control-prev {
+    filter: invert(100%);
+    }
+}
+
 
 /* END bio SECTION */
 
@@ -283,17 +300,6 @@ display: none;
   button {
     max-width: 100px;
   }
-
-
-
-  .slideshow, .new-caption-area {
-    margin: auto;
-    color: #000;
-  }
-  
-  .carousel-caption {
-	color: #000;
-}
 
 /* END resume SECTION */
 
@@ -394,7 +400,7 @@ display: none;
     position: absolute;
     top: 15px;
     right: 35px;
-    color: #f1f1f1;
+    color: #f1f1f1 !important;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
@@ -407,8 +413,14 @@ display: none;
     cursor: pointer;
   }
   
-  @media only screen and (max-width: 700px) {
+  @media screen and (max-width: 40em) {
     .modal-content {
-      width: 100%;
+      width: 90%;
+    }
+    .row {
+        border: solid 1px red;
+        display: grid;
+        grid-template-columns: 1, 1fr;
+
     }
   } 

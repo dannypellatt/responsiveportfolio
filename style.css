@@ -237,6 +237,10 @@ display: none;
     display: inline-flex;
 }
 
+#projects {
+    margin: 0 2em;
+}
+
 /* END portfolio SECTION */
 
 /* START bio SECTION */
@@ -262,11 +266,6 @@ display: none;
   
   .carousel-caption {
 	color: #000;
-}
-
-.carousel-control-next, .carousel-control-prev {
-    width: 50v;
-    height: 5wv;
 }
 
 
@@ -324,6 +323,7 @@ display: none;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    min-width: 200px;
   }
   
   #myImg:hover {

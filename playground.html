@@ -7,12 +7,34 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-
+        .menu{
+            margin:20px;
+        }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
+<!-- Search box Start -->
+<form>
+    <div class="btn-group">
+      <a class="btn dropdown-toggle btn-select" data-toggle="dropdown" href="#">Select a Items <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#"data-value="action -1">Item- I</a></li>
+        <li><a href="#" data-value="action -2">Item II</a></li>
+        <li><a href="#" data-value="action-3">Item III</a></li>
+      </ul>
+      </div>
+    <p class="menu">Options:</p>
+</form>
+<!-- Search box End -->
 
+
+<script>
+    $(".dropdown-menu li a").click(function(){
+  var selText = $(this).attr('data-value');
+    $(this).parents('.btn-group').siblings('.menu').html(selText)
+});
+</script>
 </body>
 </html>

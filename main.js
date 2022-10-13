@@ -104,3 +104,20 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+
+
+
+
+//handles read more and less on mobile portfolio section
+$(".more").on("click", function(){
+  if($(this).text()=="Close")
+  {
+      $(this).text("Read More");
+  } else {
+      $(this).text("Close");
+  }
+  $(this).next('div').slideToggle();
+
+  return false;
+});

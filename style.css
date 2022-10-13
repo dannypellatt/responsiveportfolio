@@ -24,6 +24,7 @@ h1, h2, h3 {
     line-height: 1;
     font-weight: 900;
     margin-bottom: 1em;
+    font-size: 2rem;
 }
 
 h2, h3, p {
@@ -44,12 +45,12 @@ img {
     margin: auto;
 }
 
-header, section {
+header {
     padding: 1rem 0;
 }
 
 @media (min-width: 40em) {
-    header, section {
+    header {
         padding: 1rem 0;
     }
 }
@@ -103,6 +104,10 @@ header, section {
     text-indent: 3em;
 }
 
+.flex {
+    display: flex;
+}
+
 /* END global SECTION */
 
 /* START navbar SECTION */
@@ -147,7 +152,6 @@ nav ul {
 @media (min-width: 40em) {
     .main-title {
         font-size: 10vw;
-        margin-bottom: .3em;
     }
     .main-subtitle {
         font-size: 2.1vw;
@@ -159,6 +163,8 @@ nav ul {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 2rem;
+    margin: auto;
 }
 
 .badges img {
@@ -182,6 +188,10 @@ nav ul {
     flex: 1 1 70%;
 }
 
+.fiftyfifty {
+    flex: 1 1 50%;
+}
+
 /* End intro SECTION */
 
 /* START portfolio SECTION */
@@ -190,11 +200,13 @@ nav ul {
     max-width: 50%;
     padding: .2em;
 }
+
   
 .radio_mark {
 color: black;
-min-width: 20rem;
+min-width: 11rem;
 padding: 10px;
+margin: 0 2em;
 }
 
 .radio_tabs input[type="radio"] {
@@ -210,27 +222,39 @@ cursor:pointer;
 background:#DDD;
 }
 
-label.selected{
-background:#DDD;
-
-}
 
 .radio_tabs {
-padding-bottom: 3em;
+    border-bottom: 1px solid #bbb;
+    padding-top: 1em;
 }
 
 .desc { 
 display: none; 
 }
 
-.lp {
-    border: 3px solid rgb(233, 82, 133);
+.lp.selected {
+    border-bottom: 4px solid rgb(233, 82, 133);
+    color: rgb(233, 82, 133);
+    font-weight: bold;
 }
-.mp {
-    border: 3px solid rgb(170, 170, 246);
+.lp-form {
+    border-bottom: 1px solid rgb(233, 82, 133);
 }
-.fw {
-    border: 3px solid rgb(125, 224, 69);
+.mp.selected {
+    border-bottom: 4px solid rgb(125, 224, 69);
+    color: rgb(125, 224, 69);
+    font-weight: bold;
+}
+.mp-form {
+    border-bottom: 1px solid rgb(125, 224, 69);
+}
+.fw.selected {
+    border-bottom: 4px solid rgb(170, 170, 246);
+    color: rgb(170, 170, 246);
+    font-weight: bold;
+}
+.fw-form {
+    border-bottom: 1px solid rgb(170, 170, 246);
 }
 
 .project-links {
@@ -240,6 +264,10 @@ display: none;
 #projects {
     margin: 0 2em;
 }
+.overview {
+    padding-top: 2em;
+}
+
 
 /* END portfolio SECTION */
 
@@ -252,8 +280,9 @@ display: none;
 }
 
 #aboutme {
-    background-color: var(--clr-primary-300);
-    padding-top: 2em;
+    padding-top: 5em;
+    vertical-align: super;
+    padding-bottom: 1em;
 }
 
 .carousel-caption {
@@ -269,13 +298,18 @@ display: none;
 	color: #000;
 }
 
-
 @media (max-width: 80em) {
     .carousel-control-next, .carousel-control-prev {
     filter: invert(100%);
     }
 }
 
+.about-me, .journey {
+    background-color: #ccc;
+    padding: 1em;
+}
+@media (min-width: 40em) {
+}
 
 /* END bio SECTION */
 
@@ -284,21 +318,30 @@ display: none;
 #resume {
     background-color: rgb(51, 51, 51);
     /* border: 1px solid black; */
-    padding: 2rem 2rem;
+    padding: 1.5rem 2rem;
     text-align: center;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
     color: white;
-    display: flex;
     width: 100%;
   }
   #resume h2 {
-    font-size: 30px;
-    margin-left: 30px;
+    font-size: 2em;
   }
-  
-  button {
+  .button {
     max-width: 100px;
+  }
+  .resume-button {
+    border-radius: 40px;
+    padding: 12px 16px;
+    margin: 0 .2em;
+    min-width: 6.5em;
+    color:rgb(0, 0, 0)
+  }
+  .resume-button:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .resume-button a {
+    color:rgb(0, 0, 0)
   }
 
 /* END resume SECTION */
@@ -324,12 +367,13 @@ display: none;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    min-width: 200px;
+    min-width: 150px;
   }
   
   #myImg:hover {
     opacity: 0.7;
   }
+
   
   .col h3 {
       margin-top: 10px;
@@ -340,7 +384,11 @@ display: none;
       margin-top: 5px;
       margin-bottom: 20px;
   }
-  
+
+  .large-page-functions .col {
+    max-width: 20rem !important;
+  }
+
   .modal {
     display: none;
     /* Hidden by default */
@@ -422,11 +470,16 @@ display: none;
         border: solid 1px red;
         display: grid;
         grid-template-columns: 1, 1fr;
-
-    }
+    }   
   } 
+  @media (min-width: 40em) {
+    #bootcamp img {
+        width: 60%;
+    }
+}
 
 
+  
 
   /* these showmore are for mobile portfolio */
 
@@ -449,4 +502,45 @@ display: none;
     margin-top: 0.5em;
     margin-bottom: 1em;
     font-weight: bold;
+  }
+
+
+  /* START footer SECTION */
+
+  footer {
+    background: rgba(51, 51, 51);
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    z-index: 9987;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    color: white;
+    font-size: small;
+  }
+  
+  footer h3 {
+    padding-bottom: 20px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  footer a:hover {
+    color: white;
+  }
+  
+  .footerSection {
+    display: inline-block;
+    max-width: 35%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10px;
+    padding-top: 11px;
+    vertical-align: middle;
   }

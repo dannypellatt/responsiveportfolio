@@ -193,8 +193,6 @@ nav ul {
     flex: 1 1 60%;
 }
 
-
-
 .fiftyfifty {
     flex: 1 1 50%;
 }
@@ -265,12 +263,19 @@ display: none;
     display: inline-flex;
 }
 
-#projects {
+#projects, .project-brief {
     margin: 0 1em;
+}
+#projects {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+#projects h1 {
+    padding-bottom: .5em;
 }
 
 .holder {
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(240, 240, 240);
 }
 
 .overview {
@@ -287,6 +292,10 @@ display: none;
     display: table-cell;
 }
 
+.cell {
+    min-height: 250px;
+}
+
 
 /* END portfolio SECTION */
 
@@ -299,7 +308,7 @@ display: none;
 }
 
 #aboutme {
-    padding-top: 5em;
+    padding-top: 2em;
     vertical-align: super;
     padding-bottom: 1em;
 }
@@ -327,7 +336,7 @@ display: none;
 }
 
 .about-me, .journey {
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(240, 240, 240);
     padding: 1em;
 }
 @media (min-width: 40em) {

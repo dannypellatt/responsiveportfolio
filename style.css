@@ -183,13 +183,17 @@ nav ul {
 .thirtyleft {
     flex: 1 1 30%;
 }
-.fortyleft {
-    flex: 1 1 40%;
-}
-
 .seventyright {
     flex: 1 1 70%;
 }
+.fortyleft {
+    flex: 1 1 40%;
+}
+.sixtyright {
+    flex: 1 1 60%;
+}
+
+
 
 .fiftyfifty {
     flex: 1 1 50%;
@@ -226,10 +230,7 @@ background:#DDD;
 }
 
 
-.radio_tabs {
-    border-bottom: 1px solid #bbb;
-    padding-top: 1em;
-}
+
 
 .desc { 
 display: none; 
@@ -241,7 +242,7 @@ display: none;
     font-weight: bold;
 }
 .lp-form {
-    border-bottom: 1px solid rgb(233, 82, 133);
+    border-top: 2px solid rgb(233, 82, 133);
 }
 .mp.selected {
     border-bottom: 4px solid rgb(125, 224, 69);
@@ -249,7 +250,7 @@ display: none;
     font-weight: bold;
 }
 .mp-form {
-    border-bottom: 1px solid rgb(125, 224, 69);
+    border-top: 2px solid rgb(125, 224, 69);
 }
 .fw.selected {
     border-bottom: 4px solid rgb(170, 170, 246);
@@ -257,7 +258,7 @@ display: none;
     font-weight: bold;
 }
 .fw-form {
-    border-bottom: 1px solid rgb(170, 170, 246);
+    border-top: 2px solid rgb(170, 170, 246);
 }
 
 .project-links {
@@ -265,7 +266,7 @@ display: none;
 }
 
 #projects {
-    margin: 0 2em;
+    margin: 0 1em;
 }
 
 .holder {
@@ -488,7 +489,6 @@ display: none;
       width: 90%;
     }
     .row {
-        border: solid 1px red;
         display: grid;
         grid-template-columns: 1, 1fr;
     }   

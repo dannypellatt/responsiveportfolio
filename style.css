@@ -108,6 +108,23 @@ header {
     display: flex;
 }
 
+.thirtyleft {
+    flex: 1 1 30%;
+}
+.seventyright {
+    flex: 1 1 70%;
+}
+.fortyleft {
+    flex: 1 1 40%;
+}
+.sixtyright {
+    flex: 1 1 60%;
+}
+
+.fiftyfifty {
+    flex: 1 1 50%;
+}
+
 /* END global SECTION */
 
 /* START navbar SECTION */
@@ -149,30 +166,53 @@ nav ul {
 .title {
     color: white;
     background-color: black;
-    padding-top: 60px;
+    padding-top: 50px;
+}
+
+.title img {
+    padding-left: 0;
+    max-width: 100%; 
+    height: auto;
+    min-width: 300px;
 }
 
 @media (min-width: 40em) {
     .main-title {
-        font-size: 10vw;
+        font-size: 8rem;
+        min-width: auto;
     }
     .main-subtitle {
-        font-size: 2.1vw;
+        font-size: 2vw;
+        padding-left: 5px;
+        margin-top: -10px;
+        margin-bottom: -25px;
+    }
+    .dev-title {
+        font-size: 8rem;
+        padding-top: 0px;
+
     }
 }
 
-
-.badges {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 2rem;
-    margin: auto;
-}
-
-.badges img {
-    max-width: 10%;
-    min-width: 5em;
+@media (max-width: 40em) {
+    .main-title {
+        font-size: 3.5rem;
+        min-width: auto;
+    }
+    .main-subtitle {
+        font-size: 4vw;
+        padding-left: 3px;
+        margin-top: -10px;
+        margin-bottom: -12px;
+    }
+    .dev-title {
+        font-size: 3.5rem;
+        padding-top: 0px;
+        margin-bottom: 0;
+    }
+    .title-words {
+        padding-left: 35px;
+    }
 }
 
 .content-sidebar {
@@ -180,22 +220,10 @@ nav ul {
     flex-wrap: wrap;
 }
 
-.thirtyleft {
-    flex: 1 1 30%;
-}
-.seventyright {
-    flex: 1 1 70%;
-}
-.fortyleft {
-    flex: 1 1 40%;
-}
-.sixtyright {
-    flex: 1 1 60%;
+.title-words {
+    padding-right: 0px;
 }
 
-.fiftyfifty {
-    flex: 1 1 50%;
-}
 
 /* End intro SECTION */
 
@@ -209,7 +237,6 @@ nav ul {
   
 .radio_mark {
 color: black;
-min-width: 11rem;
 padding: 10px;
 margin: 0 2em;
 }
@@ -276,6 +303,7 @@ display: none;
 
 .holder {
     background-color: rgb(240, 240, 240);
+    padding: 20px;
 }
 
 .overview {

@@ -138,7 +138,7 @@ header {
     z-index: 1;
 }
 
-.topnav a {
+.navbar a {
     color: white;
     text-decoration: none;
     display: inline-block;
@@ -170,6 +170,7 @@ nav ul {
 }
 
 .title img {
+    margin-top: 30px;
     padding-left: 0;
     max-width: 100%; 
     height: auto;
@@ -178,17 +179,17 @@ nav ul {
 
 @media (min-width: 40em) {
     .main-title {
-        font-size: 8rem;
+        font-size: 9vw;
         min-width: auto;
     }
     .main-subtitle {
-        font-size: 2vw;
+        font-size: 1.8vw;
         padding-left: 5px;
         margin-top: -10px;
-        margin-bottom: -25px;
+        margin-bottom: -15px;
     }
     .dev-title {
-        font-size: 8rem;
+        font-size: 9vw;
         padding-top: 0px;
 
     }
@@ -294,7 +295,7 @@ display: none;
     margin: 0 1em;
 }
 #projects {
-    padding-top: 2em;
+    padding-top: 3em;
     padding-bottom: 1em;
 }
 #projects h1 {
@@ -336,7 +337,7 @@ display: none;
 }
 
 #aboutme {
-    padding-top: 2em;
+    padding-top: 3em;
     vertical-align: super;
     padding-bottom: 1em;
 }

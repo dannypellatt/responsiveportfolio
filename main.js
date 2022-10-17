@@ -133,3 +133,22 @@ $(function () {
 	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 	});
 });
+
+
+
+
+// This is the toggle for roadmap section
+
+function openPath(evt, pathName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].pathName = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(pathName).style.display = "block";
+  evt.currentTarget.className += " active";
+}

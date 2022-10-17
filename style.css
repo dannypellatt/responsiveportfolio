@@ -426,7 +426,75 @@ display: none;
 
 /* END resume SECTION */
 
-/* Start certs SECTION */
+/* START roadmap SECTION */
+
+.red {
+    fill: #ff726f;
+}
+.green {
+    fill: #90EE90;
+}
+.amber {
+    fill: #ffbf00;
+}
+.blue {
+    fill: #ADD8E6;
+}
+.dark-blue {
+    color: #4176DD;
+}
+.chakra-container {
+    padding: .5rem;
+    margin: .5rem .5rem;
+}
+#knowledge h1 {
+    padding-top: 3rem;
+    padding-bottom: 1em;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* END roadmap SECTION */
+
+/* START certs SECTION */
 
 .gallery img{
     background-color: #fff;
@@ -438,7 +506,6 @@ display: none;
   }
 
   .gallery {
-    background-color: rgb(249, 249, 249);
     padding: 40px;
     text-align: center;
   }
@@ -557,6 +624,10 @@ display: none;
     }
 }
 
+#certifications h1 {
+    padding-top: 3rem;
+    padding-bottom: 1em;
+}
 
   
 
